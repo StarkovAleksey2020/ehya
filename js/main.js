@@ -1,3 +1,4 @@
+/*
 $(document).ready(function () {
     var hotelSlider = new Swiper('.hotel-slider', {
     // Optional parameters
@@ -123,3 +124,4 @@ $(document).ready(function () {
   AOS.init();
   
 });
+*/

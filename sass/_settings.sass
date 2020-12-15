@@ -1,30 +1,14 @@
-@font-face
-  font-family: 'Grotesk-Regular'
-  src: url('../fonts/HKGrotesk-Regular.eot')
-  src: local('☺'), url('../fonts/HKGrotesk-Regular.woff') format('woff'), url('../fonts/HKGrotesk-Regular.ttf') format('truetype'), url('../fonts/HKGrotesk-Regular.svg') format('svg')
-  font-weight: 400
-  font-style: normal
-@font-face
-  font-family: 'Grotesk-Medium'
-  src: url('../fonts/HKGrotesk-Medium.eot')
-  src: local('☺'), url('../fonts/HKGrotesk-Medium.woff') format('woff'), url('../fonts/HKGrotesk-Medium.ttf') format('truetype'), url('../fonts/HKGrotesk-Medium.svg') format('svg')
-  font-weight: 500
-  font-style: normal
-@font-face
-  font-family: 'Grotesk-Bold'
-  src: url('../fonts/HKGrotesk-Bold.eot')
-  src: local('☺'), url('../fonts/HKGrotesk-Bold.woff') format('woff'), url('../fonts/HKGrotesk-Bold.ttf') format('truetype'), url('../fonts/HKGrotesk-Bold.svg') format('svg')
-  font-weight: 700
-  font-style: normal
 *
   box-sizing: border-box
 body
+  font-family: 'Open Sans', sans-serif
   background-color: $background-color
 .container
   max-width: 1110px
   margin: auto
   &-main
-    width: 1280px
+    max-width: 1280px
     height: 700px
+    position: relative
     background: url("../img/image-main.png") 100% 100% no-repeat
     background-size: contain

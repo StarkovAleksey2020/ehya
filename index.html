@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ehya</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!--<link rel="preconnect" href="https://fonts.gstatic.com" />-->
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!--<link rel="stylesheet" href="css/swiper-bundle.min.css" />-->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -21,34 +21,83 @@
           <a href="index.html" class="logo">
             <img src="img/ehya-logo.svg" alt="Logo: Ehya" class="logo__image" />
           </a>
-          <ul class="navbar-menu">
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Главная</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Новинки</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Тренды</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Отзывы</a>
-            </li>
-            <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Контакты</a>
-            </li>
-          </ul>
-          <a href="#" class="navbar-menu__link">Выйти</a>
+          <div class="navbar-menu">
+            <ul class="navbar-menu__main">
+              <li class="navbar-menu__item">
+                <a href="#" class="navbar-menu__link">Главная</a>
+              </li>
+              <li class="navbar-menu__item">
+                <a href="#" class="navbar-menu__link">Новинки</a>
+              </li>
+              <li class="navbar-menu__item">
+                <a href="#" class="navbar-menu__link">Тренды</a>
+              </li>
+              <li class="navbar-menu__item">
+                <a href="#" class="navbar-menu__link">Отзывы</a>
+              </li>
+              <li class="navbar-menu__item">
+                <a href="#" class="navbar-menu__link">Контакты</a>
+              </li>
+            </ul>
+            <a href="#" class="navbar-exit">Выйти</a>
+          </div>
+          <!-- /.navbar-menu -->
         </div>
       </div>
       <!-- /.navbar-top -->
     </header>
     <section class="main">
-      <div class="container container-main"></div>
+      <div class="container container-main">
+        <div class="main-block">
+          <a href="#" class="main-badge"># READY TO BE COOL</a>
+          <h1 class="main-title">
+            Каждый может <br />быть крутым<br />и модным
+          </h1>
+          <p class="main-text">
+            Чтобы быть в тренде и стать модным, вам нужно носить отличную одежду
+            и обновлять свой стиль. Всё это вы можете найти здесь. Начните
+            сейчас.
+          </p>
+          <button class="main-button">Подобрать одежду</button>
+          <ul class="main-menu">
+            <li class="main-menu__item">
+              <a href="" class="main-menu__link">
+                <img
+                  src="img/money.svg"
+                  alt="Icon: get money"
+                  class="main-menu__image"
+                />
+                <span class="main-menu__text">Онлайн оплата</span>
+              </a>
+            </li>
+            <li class="main-menu__item">
+              <a href="" class="main-menu__link">
+                <img
+                  src="img/protect.svg"
+                  alt="Icon: protection"
+                  class="main-menu__image"
+                />
+                <span class="main-menu__text">Гарантия</span>
+              </a>
+            </li>
+            <li class="main-menu__item">
+              <a href="" class="main-menu__link">
+                <img
+                  src="img/like.svg"
+                  alt="Icon: like"
+                  class="main-menu__image"
+                />
+                <span class="main-menu__text">Качество</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.main-block -->
+      </div>
       <!-- /.container -->
     </section>
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
+    <!--<script src="js/jquery-3.5.1.min.js"></script>-->
+    <!--<script src="js/swiper-bundle.min.js"></script>-->
     <script src="js/main.js"></script>
   </body>
 </html>

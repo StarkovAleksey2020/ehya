@@ -6,6 +6,8 @@
       max-width: 95%
   .navbar
     &-menu
+      &__main
+        margin: 0 30px 0 0
       &__link
         margin-right: 25px
   .main
@@ -17,25 +19,177 @@
       margin: 20px 0
       font-size: 48px
     &-text
-      max-width: 52%
+      max-width: 62%
       margin: 0 0 46px 0
     &-menu
       margin: 38px 0 0 0
 @media (max-width: 992px)
+  .navbar
+    &-menu
+      &__main
+        margin: 0
+      &__item
+        margin-right: 0
   .main
     &-block
-      padding-left: 30px
+      padding-left: 18px
     &-title
       margin: 20px 0
       font-size: 48px
+    &-text
+      max-width: 72%
+      margin: 0 0 46px 0
 @media (max-width: 768px)
+  .container
+    &-navbar
+      min-height: 64px
+      margin: 8px auto 30px
+      max-width: 84%
+    &-main
+      max-height: 626px
+  .navbar
+    &-menu
+      display: none
+    &-top
+      &__menu
+        &-button
+          display: flex
+  .menu
+    &-button
+      display: flex
+      width: 24px
+      height: 16px
+      padding: 0
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      border: none
+      background-color: #fff
+      cursor: pointer
+      outline: none
+      &__line
+        width: 24px
+        height: 2px
+        background-color: #333
   .main
+    &-image
+      object-position: 67% 16px
+      transform: scale(1.12)
     &-block
       padding-left: 28px
+      padding-top: 36px
+    &-title
+      margin: 19px 0 25px
+      font-size: 48px
+      line-height: 60px
+    &-text
+      max-width: 77%
+      line-height: 32px
+      font-size: 18px
+      margin: 0 0 37px 0
+    &-button
+      padding: 15px 41px
+    &-menu
+      width: 446px
+      margin: 40px 0 0 0
+      &__item
+        &:nth-child(2)
+          margin: 0 8px
 @media (max-width: 576px)
   .container
+    &-navbar
+      max-width: 90%
+    &-main
+      max-width: 100%
+  .main
+    &-image
+      object-position: 80% top
+    &-block
+      padding: 0
+      max-width: 100%
+      display: flex
+      justify-content: end
+      align-items: center
+    &-title
+      font-size: 32px
+      font-style: normal
+      font-weight: bold
+      font-size: 32px
+      line-height: 40px
+      text-align: center
+      letter-spacing: 0.2px
+      margin: 20px auto
+    &-text
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 28px
+      text-align: center
+      margin: 0 0 17px 0
+    &-button
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 22px
+      text-align: center
+      padding: 13px 49px
+    &-menu
+      margin: 15px 0 0 0
+      flex-wrap: wrap
+      justify-content: center
 @media (max-width: 320px)
   .container
-    max-width: 280px
+    max-width: 100%
+    &-navbar
+      max-width: 85%
+      margin: 1px auto 23px
+    &-main
+      min-height: 899px
+  .main
+    &-image
+      object-position: 80% top
+      transform: none
+      &-wide
+        display: none
+      &-narrow
+        display: flex
+    &-block
+      padding: 0
+      max-width: 100%
+      display: flex
+      justify-content: end
+      align-items: center
+    &-title
+      font-size: 32px
+      font-style: normal
+      font-weight: bold
+      font-size: 32px
+      line-height: 40px
+      text-align: center
+      letter-spacing: 0.2px
+      margin: 13px 5px 22px 2px
+    &-text
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 28px
+      text-align: center
+      margin: 0 0 25px 0
+    &-button
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 22px
+      text-align: center
+      padding: 13px 49px
+    &-menu
+      width: 100%
+      margin: 14px 8px 31px
+      height: 77px
+      &__item
+        margin: 6px
+      &__image
+        width: 24px
+        height: 24px
 @media only screen and (max-device-height: 750px) and (orientation: landscape)
   .container

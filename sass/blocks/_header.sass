@@ -1,12 +1,32 @@
 .logo
   &__image
     width: 90px
+.menu
+  &-button
+    display: flex
+    width: 16px
+    height: 11px
+    padding: 0
+    align-items: center
+    justify-content: space-between
+    flex-direction: column
+    border: none
+    background-color: #fff
+    cursor: pointer
+    outline: none
+    &__line
+      width: 16px
+      height: 1px
+      background-color: #333
 .navbar
   &-top
     min-width: 100%
     display: flex
     justify-content: space-between
     align-items: center
+    &__menu
+      &-button
+        display: none
   &-menu
     display: flex
     align-items: center
@@ -16,7 +36,7 @@
       list-style-type: none
       align-items: center
       justify-content: space-between
-      margin: 0 50px 0 0
+      margin: 0 13px 0 0
       padding: 0
     &_item
       margin-right: 40px
@@ -38,6 +58,6 @@
     line-height: 22px
     color: $secondary
     border: 2px solid $secondary
-    padding: 13px 24px
+    padding: 11px 20px
     border-radius: 8px
     text-decoration: none

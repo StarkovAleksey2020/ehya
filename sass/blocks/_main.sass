@@ -23,6 +23,8 @@
     top: 0
     left: 0
     object-position: 65% top
+    &-narrow
+      display: none
   &-badge
     font-family: Open Sans, sans-serif
     font-style: normal
@@ -36,14 +38,14 @@
     border-radius: 2000px
     text-decoration: none
   &-title
-    font-family: 'Open Sans', sans-serif
+    font-family: 'HK-Grotesk-Bold', sans-serif
     font-style: normal
     font-weight: 700
     font-size: 56px
     line-height: 68px
     letter-spacing: 0.2px
     padding: 0
-    margin: 28px 0
+    margin: 22px 0 34px
   &-text
     max-width: 652px
     font-style: normal
@@ -65,7 +67,7 @@
     color: #FFFFFF
     border: none
   &-menu
-    max-width: 464px
+    width: 464px
     display: flex
     flex-direction: row
     justify-content: space-between
@@ -75,18 +77,20 @@
     &__image
       width: 36px
       height: 36px
+      margin-right: 8px
     &__item
       list-style-type: none
       &:nth-child(2)
-        margin: 0 31px
+        margin: 0
     &__link
       display: flex
       align-items: center
       text-decoration: none
-      font-family: HK Grotesk
+      font-family: 'HK-Grotesk-Medium', sans-serif
       font-style: normal
       font-weight: 500
       font-size: 16px
       line-height: 20px
-      letter-spacing: 0.2px
+      letter-spacing: 0.4px
       color: $primary
+      margin-right: 6px

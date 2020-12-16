@@ -4,6 +4,13 @@
       max-width: 90%
     &-main
       max-width: 95%
+    &-collection
+      max-width: 90%
+      height: 807px
+      padding: 0
+      margin: 120px auto 100px
+      flex-direction: column
+      align-items: center
   .navbar
     &-menu
       &__main
@@ -23,6 +30,24 @@
       margin: 0 0 46px 0
     &-menu
       margin: 38px 0 0 0
+  .collection
+    &-gallery
+      flex-direction: column
+      max-height: 490px
+      &__image
+        flex-basis: 47%
+        &--cafe, &--room
+          max-height: 47%
+    &-info
+      max-width: 670px
+      margin: 40px 0 0 0
+      &__title
+        width: 100%
+        margin: 0 0 24px 0
+      &__text
+        max-width: 100%
+        min-height: min-content
+        margin: 0 0 18px 0
 @media (max-width: 992px)
   .navbar
     &-menu
@@ -47,6 +72,8 @@
       max-width: 84%
     &-main
       max-height: 626px
+    &-collection
+      margin: 79px auto 100px
   .navbar
     &-menu
       display: none
@@ -95,6 +122,67 @@
       &__item
         &:nth-child(2)
           margin: 0 8px
+  .collection
+    &-info
+      margin: 34px 0 0 0
+      min-width: 100%
+      padding: 0 10px
+      &__title
+        margin: 0 0 29px 0
+      &__text
+        display: none
+        &--mobile
+          display: block
+          max-width: 100%
+          font-family: Open Sans
+          font-style: normal
+          font-weight: normal
+          font-size: 20px
+          line-height: 36px
+          color: $text-color
+          margin: 0 0 23px 0
+@media (max-width: 767px)
+  .collection
+    &-gallery
+      width: 290px
+      flex-direction: row
+      &__image
+        &:first-child
+          display: none
+        &--cafe
+          margin: 0 14px 0 0
+        &--cafe, &--room
+          width: 138px
+          height: 97px
+        &--mobile
+          display: flex
+          height: 300px
+          width: 290px
+          flex-basis: 100%
+          margin: 0 0 14px 0
+    &-info
+      min-width: 290px
+      width: 290px
+      flex-direction: row
+      margin: 36px 0 0 0
+      &__title
+        font-style: normal
+        font-weight: bold
+        font-size: 28px
+        line-height: 36px
+        text-align: center
+        letter-spacing: 0.2px
+        margin: 0 0 20px 0
+      &__text
+        display: none
+        &--mobile
+          display: block
+          font-style: normal
+          font-weight: normal
+          font-size: 16px
+          line-height: 28px
+          text-align: center
+
 @media (max-width: 576px)
   .container
     &-navbar
@@ -145,6 +233,8 @@
       margin: 1px auto 23px
     &-main
       min-height: 899px
+    &-collection
+      margin: 64px auto 100px
   .main
     &-image
       object-position: 80% top
@@ -192,5 +282,14 @@
       &__image
         width: 24px
         height: 24px
+  .collection
+    &-gallery
+      max-height: 411px
+    &-info
+      margin: 33px 0 0 0
+      &__title
+        margin: 0 0 22px 0
+      &__link
+        display: none
 @media only screen and (max-device-height: 750px) and (orientation: landscape)
   .container

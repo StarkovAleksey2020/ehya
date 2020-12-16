@@ -1,0 +1,69 @@
+.collection
+  &-gallery
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    flex-basis: 58%
+    width: 670px
+    &__image
+      width: 320px
+      flex-basis: 47%
+      &--mobile
+        display: none
+      &:first-child
+        max-height: 490px
+        max-width: 320px
+        height: 100%
+        width: 49%
+        flex-basis: 100%
+        margin: 0 28px 0 0
+      &--cafe
+        margin: 0 0 29px 0
+  &-info
+    max-width: 412px
+    height: 430px
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    flex-basis: 36%
+    margin: 5px 1px 54px auto
+    &__title
+      font-family: HK-Grotesk-Bold
+      font-style: normal
+      font-weight: bold
+      font-size: 48px
+      line-height: 60px
+      letter-spacing: 0.2px
+      margin: 0 0 29px 0
+      padding: 0
+      color: $primary
+    &__text
+      max-width: 392px
+      min-height: 225px
+      font-family: Open Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 20px
+      line-height: 36px
+      color: $text-color
+      margin: 0 0 31px 0
+      &--mobile
+        display: none
+    &__link
+      font-family: Open Sans
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 25px
+      color: $secondary
+      display: flex
+      justify-content: flex-start
+      align-items: center
+      text-decoration: none
+      &-label
+        margin-right: 19px
+      &-icon
+        font-style: normal
+        font-weight: 900
+        font-size: 14px
+        line-height: 16px

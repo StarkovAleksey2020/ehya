@@ -75,8 +75,20 @@
     &-collection
       margin: 79px auto 100px
   .navbar
+    position: fixed
+    top: 0
+    right: 0
+    left: 0
+    z-index: 99
+    background-color: #fff
     &-menu
-      display: none
+      &__top
+        display: none
+      &__item
+        list-style-type: none
+        margin-bottom: 20px
+      &__link
+        color: #fff
     &-top
       &__menu
         &-button
@@ -99,6 +111,7 @@
         height: 2px
         background-color: #333
   .main
+    margin-top: 102px
     &-image
       object-position: 67% 16px
       transform: scale(1.12)
@@ -182,7 +195,6 @@
           font-size: 16px
           line-height: 28px
           text-align: center
-
 @media (max-width: 576px)
   .container
     &-navbar

@@ -90,23 +90,6 @@
           alt="main section image"
           class="main-image main-image-narrow"
         />
-        <!--
-                    <img
-              src="img/image-main-wide.jpg"
-              alt="main section image"
-              class="main-image main-image-wide"
-            />
-            <img
-              src="img/image-main-normal.jpg"
-              alt="main section image"
-              class="main-image main-image-normal"
-            />
-            <img
-              src="img/image-main-narrow.jpg"
-              alt="main section image"
-              class="main-image main-image-narrow"
-            />
--->
         <div class="main-block">
           <a href="#" class="main-badge"># READY TO BE COOL</a>
           <h1 class="main-title" lang="en">
@@ -215,30 +198,38 @@
       <div class="container container-trends">
         <div class="trends-title">
           <h3 class="trends-title__header" lang="en">Тренды</h3>
-          <div class="trends-title__tabs">
-            <a href="#" class="trends-title__tabs-item">Новинки</a>
-            <a href="#" class="trends-title__tabs-item">Лучшее</a>
-            <a href="#" class="trends-title__tabs-item">Скоро</a>
-          </div>
-          <!-- /.trends-title__tabs -->
+          <ul class="trends-title__tabs">
+            <li
+              data-target="#new-trends"
+              class="trends-title__tabs-item trends-title__tabs-item--accent"
+            >
+              Новинки
+            </li>
+            <li data-target="#best-trends" class="trends-title__tabs-item">
+              Лучшее
+            </li>
+            <li data-target="#soon-trends" class="trends-title__tabs-item">
+              Скоро
+            </li>
+          </ul>
         </div>
         <!-- /.trends-title -->
-        <div class="trends-cards">
+        <div id="new-trends" class="trends-cards trends-cards--visible">
           <div class="card-item">
             <img
               src="img/minimalist-style-1440.jpg"
               alt="Trend: minimalist style"
-              class="card-image__wide"
+              class="card-image card-image__wide"
             />
             <img
               src="img/minimalist-style-768.jpg"
               alt="Trend: minimalist style"
-              class="card-image__normal"
+              class="card-image card-image__normal"
             />
             <img
               src="img/minimalist-style-320.jpg"
               alt="Trend: minimalist style"
-              class="card-image__narrow"
+              class="card-image card-image__narrow"
             />
             <div class="card-info">
               <h4 class="card-title" lang="en">Minimalist Style</h4>
@@ -258,17 +249,17 @@
             <img
               src="img/luxury-gown-1440.jpg"
               alt="Trend: Luxury Gown"
-              class="card-image__wide"
+              class="card-image card-image__wide"
             />
             <img
               src="img/luxury-gown-768.jpg"
               alt="Trend: Luxury Gown"
-              class="card-image__normal"
+              class="card-image card-image__normal"
             />
             <img
               src="img/luxury-gown-320.jpg"
               alt="Trend: Luxury Gown"
-              class="card-image__narrow"
+              class="card-image card-image__narrow"
             />
             <div class="card-info">
               <h4 class="card-title" lang="en">Luxury Gown</h4>
@@ -288,17 +279,17 @@
             <img
               src="img/full-coloristy-1440.jpg"
               alt="Trend: Full Coloristy"
-              class="card-image__wide"
+              class="card-image card-image__wide"
             />
             <img
               src="img/full-coloristy-768.jpg"
               alt="Trend: Full Coloristy"
-              class="card-image__normal"
+              class="card-image card-image__normal"
             />
             <img
               src="img/full-coloristy-320.jpg"
               alt="Trend: Full Coloristy"
-              class="card-image__narrow"
+              class="card-image card-image__narrow"
             />
             <div class="card-info">
               <h4 class="card-title" lang="en">Full Coloristy</h4>
@@ -318,17 +309,17 @@
             <img
               src="img/pinky-winky-1440.jpg"
               alt="Trend: Pinky Winky"
-              class="card-image__wide"
+              class="card-image card-image__wide"
             />
             <img
               src="img/pinky-winky-768.jpg"
               alt="Trend: Pinky Winky"
-              class="card-image__normal"
+              class="card-image card-image__normal"
             />
             <img
               src="img/pinky-winky-320.jpg"
               alt="Trend: Pinky Winky"
-              class="card-image__narrow"
+              class="card-image card-image__narrow"
             />
             <div class="card-info">
               <h4 class="card-title" lang="en">Pinky Winky</h4>
@@ -348,17 +339,17 @@
             <img
               src="img/holiday-vibes-1440.jpg"
               alt="Trend: Holiday Vibes"
-              class="card-image__wide"
+              class="card-image card-image__wide"
             />
             <img
               src="img/holiday-vibes-768.jpg"
               alt="Trend: Holiday Vibes"
-              class="card-image__normal"
+              class="card-image card-image__normal"
             />
             <img
               src="img/holiday-vibes-320.jpg"
               alt="Trend: Holiday Vibes"
-              class="card-image__narrow"
+              class="card-image card-image__narrow"
             />
             <div class="card-info">
               <h4 class="card-title" lang="en">Holiday Vibes</h4>
@@ -378,17 +369,17 @@
             <img
               src="img/swaggie-shaggy-1440.jpg"
               alt="Trend: Swaggie Shaggy"
-              class="card-image__wide"
+              class="card-image card-image__wide"
             />
             <img
               src="img/swaggie-shaggy-768.jpg"
               alt="Trend: Swaggie Shaggy"
-              class="card-image__normal"
+              class="card-image card-image__normal"
             />
             <img
               src="img/swaggie-shaggy-320.jpg"
               alt="Trend: Swaggie Shaggy"
-              class="card-image__narrow"
+              class="card-image card-image__narrow"
             />
             <div class="card-info">
               <h4 class="card-title" lang="en">Swaggie Shaggy</h4>
@@ -408,17 +399,17 @@
             <img
               src="img/red-formal-1440.jpg"
               alt="Trend: Red Formal"
-              class="card-image__wide"
+              class="card-image card-image__wide"
             />
             <img
               src="img/red-formal-768.jpg"
               alt="Trend: Red Formal"
-              class="card-image__normal"
+              class="card-image card-image__normal"
             />
             <img
               src="img/red-formal-320.jpg"
               alt="Trend: Red Formal"
-              class="card-image__narrow"
+              class="card-image card-image__narrow"
             />
             <div class="card-info">
               <h4 class="card-title" lang="en">Red Formal</h4>
@@ -438,17 +429,489 @@
             <img
               src="img/look-more-1440.jpg"
               alt="Trend: look more"
-              class="card-image__wide"
+              class="card-image card-image__wide"
             />
             <img
               src="img/look-more-768.jpg"
               alt="Trend: look more"
-              class="card-image__normal"
+              class="card-image card-image__normal"
             />
             <img
               src="img/look-more-320.jpg"
               alt="Trend: look more"
-              class="card-image__narrow"
+              class="card-image card-image__narrow"
+            />
+            <div class="card-info">
+              <h4 class="card-title" lang="en"></h4>
+              <span class="card-price"></span>
+            </div>
+            <!-- /.card-info -->
+          </div>
+          <!-- /.card-item -->
+        </div>
+        <!-- /.trends-cards -->
+        <div id="best-trends" class="trends-cards">
+          <div class="card-item">
+            <img
+              src="img/trends-new-0.jpg"
+              alt="Trend: trends new"
+              class="card-image card-image__wide"
+            />
+            <img
+              src="img/trends-new-0.jpg"
+              alt="Trend: trends new"
+              class="card-image card-image__normal"
+            />
+            <img
+              src="img/trends-new-0.jpg"
+              alt="Trend: trends new"
+              class="card-image card-image__narrow"
+            />
+            <div class="card-info">
+              <h4 class="card-title" lang="en">Trends new 0</h4>
+              <span class="card-price">$0.01</span>
+              <a href="#" class="card-basket">
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Card: basket"
+                  class="card-icon"
+                />
+              </a>
+            </div>
+            <!-- /.card-info -->
+          </div>
+          <!-- /.card-item -->
+          <div class="card-item">
+            <img
+              src="img/trends-new-1.jpg"
+              alt="Trend: trends new"
+              class="card-image card-image__wide"
+            />
+            <img
+              src="img/trends-new-1.jpg"
+              alt="Trend: trends new"
+              class="card-image card-image__normal"
+            />
+            <img
+              src="img/trends-new-1.jpg"
+              alt="Trend: trends new"
+              class="card-image card-image__narrow"
+            />
+            <div class="card-info">
+              <h4 class="card-title" lang="en">Trends new 1</h4>
+              <span class="card-price">$0.01</span>
+              <a href="#" class="card-basket">
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Card: basket"
+                  class="card-icon"
+                />
+              </a>
+            </div>
+            <!-- /.card-info -->
+          </div>
+          <!-- /.card-item -->
+          <div class="card-item">
+            <img
+              src="img/trends-new-2.jpg"
+              alt="Trend: trends new"
+              class="card-image card-image__wide"
+            />
+            <img
+              src="img/trends-new-2.jpg"
+              alt="Trend: trends new"
+              class="card-image card-image__normal"
+            />
+            <img
+              src="img/trends-new-2.jpg"
+              alt="Trend: trends new"
+              class="card-image card-image__narrow"
+            />
+            <div class="card-info">
+              <h4 class="card-title" lang="en">Trends new 2</h4>
+              <span class="card-price">$0.01</span>
+              <a href="#" class="card-basket">
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Card: basket"
+                  class="card-icon"
+                />
+              </a>
+            </div>
+            <!-- /.card-info -->
+          </div>
+          <!-- /.card-item -->
+          <div class="card-item">
+            <img
+              src="img/trends-new-3.jpg"
+              alt="Trend: trends new"
+              class="card-image card-image__wide"
+            />
+            <img
+              src="img/trends-new-3.jpg"
+              alt="Trend: trends new"
+              class="card-image card-image__normal"
+            />
+            <img
+              src="img/trends-new-3.jpg"
+              alt="Trend: trends new"
+              class="card-image card-image__narrow"
+            />
+            <div class="card-info">
+              <h4 class="card-title" lang="en">Trends new 3</h4>
+              <span class="card-price">$0.01</span>
+              <a href="#" class="card-basket">
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Card: basket"
+                  class="card-icon"
+                />
+              </a>
+            </div>
+            <!-- /.card-info -->
+          </div>
+          <!-- /.card-item -->
+          <div class="card-item">
+            <img
+              src="img/trends-new-4.jpg"
+              alt="Trend: trends new"
+              class="card-image card-image__wide"
+            />
+            <img
+              src="img/trends-new-4.jpg"
+              alt="Trend: trends new"
+              class="card-image card-image__normal"
+            />
+            <img
+              src="img/trends-new-4.jpg"
+              alt="Trend: trends new"
+              class="card-image card-image__narrow"
+            />
+            <div class="card-info">
+              <h4 class="card-title" lang="en">Trends new 4</h4>
+              <span class="card-price">$0.01</span>
+              <a href="#" class="card-basket">
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Card: basket"
+                  class="card-icon"
+                />
+              </a>
+            </div>
+            <!-- /.card-info -->
+          </div>
+          <!-- /.card-item -->
+          <div class="card-item">
+            <img
+              src="img/trends-new-5.jpg"
+              alt="Trend: trends new"
+              class="card-image card-image__wide"
+            />
+            <img
+              src="img/trends-new-5.jpg"
+              alt="Trend: trends new"
+              class="card-image card-image__normal"
+            />
+            <img
+              src="img/trends-new-5.jpg"
+              alt="Trend: trends new"
+              class="card-image card-image__narrow"
+            />
+            <div class="card-info">
+              <h4 class="card-title" lang="en">Trends new 5</h4>
+              <span class="card-price">$0.01</span>
+              <a href="#" class="card-basket">
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Card: basket"
+                  class="card-icon"
+                />
+              </a>
+            </div>
+            <!-- /.card-info -->
+          </div>
+          <!-- /.card-item -->
+          <div class="card-item">
+            <img
+              src="img/trends-new-6.jpg"
+              alt="Trend: trends new"
+              class="card-image card-image__wide"
+            />
+            <img
+              src="img/trends-new-6.jpg"
+              alt="Trend: trends new"
+              class="card-image card-image__normal"
+            />
+            <img
+              src="img/trends-new-6.jpg"
+              alt="Trend: trends new"
+              class="card-image card-image__narrow"
+            />
+            <div class="card-info">
+              <h4 class="card-title" lang="en">Trends new 6</h4>
+              <span class="card-price">$0.01</span>
+              <a href="#" class="card-basket">
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Card: basket"
+                  class="card-icon"
+                />
+              </a>
+            </div>
+            <!-- /.card-info -->
+          </div>
+          <!-- /.card-item -->
+          <div class="card-item">
+            <img
+              src="img/look-more-1440.jpg"
+              alt="Trend: look more"
+              class="card-image card-image__wide"
+            />
+            <img
+              src="img/look-more-768.jpg"
+              alt="Trend: look more"
+              class="card-image card-image__normal"
+            />
+            <img
+              src="img/look-more-320.jpg"
+              alt="Trend: look more"
+              class="card-image card-image__narrow"
+            />
+            <div class="card-info">
+              <h4 class="card-title" lang="en"></h4>
+              <span class="card-price"></span>
+            </div>
+            <!-- /.card-info -->
+          </div>
+          <!-- /.card-item -->
+        </div>
+        <!-- /.trends-cards -->
+        <div id="soon-trends" class="trends-cards">
+          <div class="card-item">
+            <img
+              src="img/trends-soon-0.jpg"
+              alt="Trend: trends soon"
+              class="card-image card-image__wide"
+            />
+            <img
+              src="img/trends-soon-0.jpg"
+              alt="Trend: trends soon"
+              class="card-image card-image__normal"
+            />
+            <img
+              src="img/trends-soon-0.jpg"
+              alt="Trend: trends soon"
+              class="card-image card-image__narrow"
+            />
+            <div class="card-info">
+              <h4 class="card-title" lang="en">Trends soon 0</h4>
+              <span class="card-price">$0.01</span>
+              <a href="#" class="card-basket">
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Card: basket"
+                  class="card-icon"
+                />
+              </a>
+            </div>
+            <!-- /.card-info -->
+          </div>
+          <!-- /.card-item -->
+          <div class="card-item">
+            <img
+              src="img/trends-soon-1.jpg"
+              alt="Trend: trends soon"
+              class="card-image card-image__wide"
+            />
+            <img
+              src="img/trends-soon-1.jpg"
+              alt="Trend: trends soon"
+              class="card-image card-image__normal"
+            />
+            <img
+              src="img/trends-soon-1.jpg"
+              alt="Trend: trends soon"
+              class="card-image card-image__narrow"
+            />
+            <div class="card-info">
+              <h4 class="card-title" lang="en">Trends soon 1</h4>
+              <span class="card-price">$0.01</span>
+              <a href="#" class="card-basket">
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Card: basket"
+                  class="card-icon"
+                />
+              </a>
+            </div>
+            <!-- /.card-info -->
+          </div>
+          <!-- /.card-item -->
+          <div class="card-item">
+            <img
+              src="img/trends-soon-2.jpg"
+              alt="Trend: trends soon"
+              class="card-image card-image__wide"
+            />
+            <img
+              src="img/trends-soon-2.jpg"
+              alt="Trend: trends soon"
+              class="card-image card-image__normal"
+            />
+            <img
+              src="img/trends-soon-2.jpg"
+              alt="Trend: trends soon"
+              class="card-image card-image__narrow"
+            />
+            <div class="card-info">
+              <h4 class="card-title" lang="en">Trends soon 2</h4>
+              <span class="card-price">$0.01</span>
+              <a href="#" class="card-basket">
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Card: basket"
+                  class="card-icon"
+                />
+              </a>
+            </div>
+            <!-- /.card-info -->
+          </div>
+          <!-- /.card-item -->
+          <div class="card-item">
+            <img
+              src="img/trends-soon-3.jpg"
+              alt="Trend: trends soon"
+              class="card-image card-image__wide"
+            />
+            <img
+              src="img/trends-soon-3.jpg"
+              alt="Trend: trends soon"
+              class="card-image card-image__normal"
+            />
+            <img
+              src="img/trends-soon-3.jpg"
+              alt="Trend: trends soon"
+              class="card-image card-image__narrow"
+            />
+            <div class="card-info">
+              <h4 class="card-title" lang="en">Trends soon 3</h4>
+              <span class="card-price">$0.01</span>
+              <a href="#" class="card-basket">
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Card: basket"
+                  class="card-icon"
+                />
+              </a>
+            </div>
+            <!-- /.card-info -->
+          </div>
+          <!-- /.card-item -->
+          <div class="card-item">
+            <img
+              src="img/trends-soon-4.jpg"
+              alt="Trend: trends soon"
+              class="card-image card-image__wide"
+            />
+            <img
+              src="img/trends-soon-4.jpg"
+              alt="Trend: trends soon"
+              class="card-image card-image__normal"
+            />
+            <img
+              src="img/trends-soon-4.jpg"
+              alt="Trend: trends soon"
+              class="card-image card-image__narrow"
+            />
+            <div class="card-info">
+              <h4 class="card-title" lang="en">Trends soon 4</h4>
+              <span class="card-price">$0.01</span>
+              <a href="#" class="card-basket">
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Card: basket"
+                  class="card-icon"
+                />
+              </a>
+            </div>
+            <!-- /.card-info -->
+          </div>
+          <!-- /.card-item -->
+          <div class="card-item">
+            <img
+              src="img/trends-soon-5.jpg"
+              alt="Trend: trends soon"
+              class="card-image card-image__wide"
+            />
+            <img
+              src="img/trends-soon-5.jpg"
+              alt="Trend: trends soon"
+              class="card-image card-image__normal"
+            />
+            <img
+              src="img/trends-soon-5.jpg"
+              alt="Trend: trends soon"
+              class="card-image card-image__narrow"
+            />
+            <div class="card-info">
+              <h4 class="card-title" lang="en">Trends soon 5</h4>
+              <span class="card-price">$0.01</span>
+              <a href="#" class="card-basket">
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Card: basket"
+                  class="card-icon"
+                />
+              </a>
+            </div>
+            <!-- /.card-info -->
+          </div>
+          <!-- /.card-item -->
+          <div class="card-item">
+            <img
+              src="img/trends-soon-6.jpg"
+              alt="Trend: trends soon"
+              class="card-image card-image__wide"
+            />
+            <img
+              src="img/trends-soon-6.jpg"
+              alt="Trend: trends soon"
+              class="card-image card-image__normal"
+            />
+            <img
+              src="img/trends-soon-6.jpg"
+              alt="Trend: trends soon"
+              class="card-image card-image__narrow"
+            />
+            <div class="card-info">
+              <h4 class="card-title" lang="en">Trends soon 6</h4>
+              <span class="card-price">$0.01</span>
+              <a href="#" class="card-basket">
+                <img
+                  src="img/shopping-cart.svg"
+                  alt="Card: basket"
+                  class="card-icon"
+                />
+              </a>
+            </div>
+            <!-- /.card-info -->
+          </div>
+          <!-- /.card-item -->
+          <div class="card-item">
+            <img
+              src="img/look-more-1440.jpg"
+              alt="Trend: look more"
+              class="card-image card-image__wide"
+            />
+            <img
+              src="img/look-more-768.jpg"
+              alt="Trend: look more"
+              class="card-image card-image__normal"
+            />
+            <img
+              src="img/look-more-320.jpg"
+              alt="Trend: look more"
+              class="card-image card-image__narrow"
             />
             <div class="card-info">
               <h4 class="card-title" lang="en"></h4>

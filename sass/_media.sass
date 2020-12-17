@@ -48,6 +48,14 @@
         max-width: 100%
         min-height: min-content
         margin: 0 0 18px 0
+  .card
+    &-item
+      max-width: 220px
+      max-height: 441px
+      margin-bottom: 50px
+      margin-right: 12px
+    &-title
+      font-size: 22px
 @media (max-width: 992px)
   .navbar
     &-menu
@@ -64,6 +72,20 @@
     &-text
       max-width: 72%
       margin: 0 0 46px 0
+  .card
+    &-item
+      max-width: 190px
+      max-height: 441px
+      margin-bottom: 50px
+      margin-right: 0
+@media (max-width: 882px)
+  .card
+    &-item
+      max-width: 170px
+      max-height: 441px
+      margin-bottom: 50px
+    &-title
+      font-size: 18px
 @media (max-width: 768px)
   .container
     &-navbar
@@ -82,6 +104,7 @@
         background-color: $primary
     &-main
       max-height: 626px
+      width: 95%
     &-collection
       margin: 79px auto 100px
   .navbar
@@ -164,6 +187,41 @@
           line-height: 36px
           color: $text-color
           margin: 0 0 23px 0
+  .container
+    &-trends
+      margin-top: -44px
+  .trends
+    &-title
+      flex-wrap: wrap
+      justify-content: center
+      margin-bottom: 130px
+      &__header
+        flex-basis: 100%
+        text-align: center
+        margin-bottom: 32px
+    &-cards
+      justify-content: space-evenly
+  .card
+    &-item
+      max-width: 280px
+      max-height: 441px
+      width: 100%
+    &-image
+      max-height: 350px
+      width: 100%
+      object-fit: cover
+      &__wide, &__narrow
+        display: none
+      &__normal
+        display: flex
+    &-title
+      font-size: 23px
+    &-price
+      font-size: 20px
+    &-icon
+      width: 23px
+      height: 32px
+      padding-top: 10px
 @media (max-width: 767px)
   .collection
     &-gallery
@@ -205,6 +263,11 @@
           font-size: 16px
           line-height: 28px
           text-align: center
+  .card
+    &-item
+      max-width: 240px
+      max-height: 441px
+      width: 100%
 @media (max-width: 576px)
   .container
     &-navbar
@@ -230,6 +293,7 @@
       letter-spacing: 0.2px
       margin: 20px auto
     &-text
+      max-width: 84%
       font-style: normal
       font-weight: normal
       font-size: 16px
@@ -247,6 +311,37 @@
       margin: 15px 0 0 0
       flex-wrap: wrap
       justify-content: center
+  .container
+    &-trends
+      max-width: 95%
+      padding-left: 0
+      padding-right: 0
+  .card
+    &-item
+      max-width: 183px
+      max-height: 441px
+      width: 100%
+    &-info
+      justify-content: flex-start
+      padding: 16px 5px 1px 5px
+    &-title
+      font-size: 16px
+    &-price
+      font-size: 14px
+      margin-right: 9px
+    &-icon
+      width: 14px
+      height: 32px
+      margin-bottom: 4px
+@media (max-width: 440px)
+  .trends
+    &-cards
+      /*justify-content: space-between*/
+  .card
+    &-item
+      max-width: 140px
+      max-height: 441px
+      width: 100%
 @media (max-width: 320px)
   .container
     max-width: 100%
@@ -257,7 +352,10 @@
       min-height: 899px
     &-collection
       margin: 64px auto 100px
+    &-trends
+      margin-top: -93px
   .main
+    margin-top: 86px
     &-image
       object-position: 80% top
       transform: none
@@ -279,7 +377,7 @@
       line-height: 40px
       text-align: center
       letter-spacing: 0.2px
-      margin: 13px 5px 22px 2px
+      margin: 13px 4px 20px 0px
     &-text
       font-style: normal
       font-weight: normal
@@ -313,5 +411,46 @@
         margin: 0 0 22px 0
       &__link
         display: none
+  .trends
+    &-title
+      margin-bottom: 91px
+      &__header
+        font-size: 28px
+        margin-bottom: 14px
+      &__tabs
+        width: 218px
+        &-item
+          font-size: 16px
+  .card
+    &-item
+      max-width: 141px
+      max-height: 234px
+      margin-bottom: 20px
+    &-image
+      &__wide, &__normal
+        display: none
+      &__narrow
+        display: flex
+    &-info
+      padding: 12px 0
+    &-title
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 20px
+      letter-spacing: 0.2px
+    &-price
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 24px
+    &-icon
+      font-style: normal
+      font-weight: 900
+      font-size: 12px
+      line-height: 32px
+      letter-spacing: 0.1px
+      margin: 0 0 -10px 2px
+      padding: 0 0 10px 0
 @media only screen and (max-device-height: 750px) and (orientation: landscape)
   .container

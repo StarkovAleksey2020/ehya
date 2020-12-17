@@ -41,8 +41,13 @@
     max-width: 261px
     max-height: 441px
     margin-bottom: 50px
+    margin-right: 1px
   &-image
-    border-radius: 8px
+    &__wide, &__normal, &__narrow
+      max-width: 100%
+      border-radius: 8px
+    &__normal, &__narrow
+      display: none
   &-info
     max-height: 91px
     display: flex

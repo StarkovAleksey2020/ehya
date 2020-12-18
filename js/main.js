@@ -28,7 +28,7 @@ $(document).ready(function () {
       clicable: true,
     },
   });
-    $(".swiper-container").mouseenter(function() {
+  $(".swiper-container").mouseenter(function() {
     reviewsSlider.autoplay.stop();
   });
 
@@ -36,4 +36,17 @@ $(document).ready(function () {
     reviewsSlider.autoplay.start();
   });
 
+  var historySlider = new Swiper('.history-slider', {
+    // Optional parameters
+    loop: true,
+    slidesPerView: 2,
+    loopFillGroupWithBlank: false,
+    spaceBetween: 20,
+    slidesPerGroup: 2,
+    // Navigation arrows
+    navigation: {
+      nextEl: '.history-info-buttons__left',
+      prevEl: '.history-info-buttons__right',
+    },
+  });
 });

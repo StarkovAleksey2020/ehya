@@ -1,0 +1,96 @@
+.history
+  &-info
+    min-height: 485px
+    display: flex
+    flex-direction: column
+    flex-basis: 40%
+    &-badge
+      width: 102px
+      height: 32px
+      font-family: Open Sans, sans-serif
+      font-style: normal
+      font-weight: 600
+      font-size: 14px
+      line-height: 20px
+      text-align: center
+      color: $badge-color
+      background-color: #D6E5DE
+      padding: 6px 16px
+      border-radius: 2000px
+      text-decoration: none
+      text-align: center
+      text-transform: uppercase
+    &-title
+      font-family: 'HK-Grotesk-Bold', sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 48px
+      line-height: 60px
+      letter-spacing: 0.2px
+      color: $primary
+      margin: 22px 0 10px
+    &-text
+      font-style: normal
+      font-weight: normal
+      font-size: 20px
+      line-height: 36px
+      color: $text-color
+      margin-bottom: 50px
+      &--normal, &--narrow
+        display: none
+      &--wide
+        display: flex
+    &-buttons
+      width: 132px
+      height: 56px
+      display: flex
+      justify-content: space-between
+      align-items: center
+      &__image
+        width: 56px
+        height: 56px
+  &-cards
+    min-height: 475px
+    display: flex
+    flex-direction: row
+    flex-basis: 58%
+    justify-content: space-between
+    padding: 0 0 0 5px
+    &__item
+      width: 322px
+      height: 475px
+      position: relative
+      /*margin-right: 18px*/
+    &__image
+      &--normal, &--narrow
+        display: none
+    &__legend
+      width: 312px
+      height: 178px
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      position: absolute
+      bottom: 0
+      right: 0
+      background-color: $bgr-legend
+    &-title
+      width: 260px
+      min-height: 104px
+      font-family: 'HK-Grotesk-Medium', sans-serif
+      font-style: normal
+      font-weight: 500
+      font-size: 22px
+      line-height: 32px
+      letter-spacing: 0.2px
+      color: $primary
+      margin: 18px 32px 12px 20px
+    &-more
+      width: 250px
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      text-decoration: none
+      margin: 0 40px 20px 22px
+      color: $secondary

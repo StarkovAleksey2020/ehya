@@ -122,6 +122,11 @@
       width: 95%
     &-collection
       margin: 79px auto 100px
+    &-reviews
+      max-width: 630px
+      min-height: 415px
+      padding: 0
+      margin: -113px auto 80px
   .navbar
     position: fixed
     top: 0
@@ -237,7 +242,29 @@
       width: 23px
       height: 32px
       padding-top: 10px
+  .reviews
+    &-slider
+      &__avatar
+        margin-bottom: 6px
+      &__text
+        font-style: normal
+        font-weight: normal
+        font-size: 20px
+        line-height: 42px
+        text-align: center
+        letter-spacing: 0.133333px
+        &--wide, &--narrow
+          display: none
+        &--normal
+          display: flex
+  .swiper
+    &-pagination
+      bottom: 7px
 @media (max-width: 767px)
+  .container
+    &-reviews
+      max-width: 90%
+      min-height: 450px
   .collection
     &-gallery
       width: 290px
@@ -289,6 +316,9 @@
       max-width: 90%
     &-main
       max-width: 100%
+    &-reviews
+      min-height: 555px
+      margin: -140px auto 80px
   .main
     &-image
       object-position: 80% top
@@ -354,6 +384,26 @@
       width: 14px
       height: 32px
       margin-bottom: 4px
+  .reviews
+    &-slider
+      &__avatar
+        width: 70px
+        height: 81px
+        margin-bottom: 2px
+      &__text
+        font-family: 'HK-Grotesk-Regular', sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 36px
+        text-align: center
+        letter-spacing: 0.12px
+        color: $primary
+        margin-bottom: 28px
+        &--wide, &--normal
+          display: none
+        &--narrow
+          display: flex
 @media (max-width: 440px)
   .trends
     &-cards
@@ -377,6 +427,10 @@
       margin: 64px auto 100px
     &-trends
       margin-top: -93px
+    &-reviews
+      min-height: 555px
+      max-width: 280px
+      margin: -117px auto 80px
   .main
     margin-top: 86px
     &-image
@@ -476,5 +530,22 @@
       letter-spacing: 0.1px
       margin: 0 0 -10px 2px
       padding: 0 0 10px 0
+  .reviews
+    &-slider
+      &__avatar
+        margin-bottom: -8px
+      &__text
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 36px
+        text-align: center
+        letter-spacing: 0.12px
+        margin-bottom: 25px
+      &__sign
+        max-width: 60%
+  .swiper
+    &-pagination
+      bottom: 0
 @media only screen and (max-device-height: 750px) and (orientation: landscape)
   .container

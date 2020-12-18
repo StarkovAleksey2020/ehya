@@ -15,4 +15,25 @@ $(document).ready(function () {
     $(activeContent).addClass("trends-cards--visible");
     $(this).addClass("trends-title__tabs-item--accent");
   });
+
+  var reviewsSlider = new Swiper('.reviews-slider', {
+    // Optional parameters
+    loop: true,
+  
+    autoplay: {
+      delay: 5000,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clicable: true,
+    },
+  });
+    $(".swiper-container").mouseenter(function() {
+    reviewsSlider.autoplay.stop();
+  });
+
+  $(".swiper-container").mouseleave(function() {
+    reviewsSlider.autoplay.start();
+  });
+
 });

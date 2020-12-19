@@ -49,4 +49,18 @@ $(document).ready(function () {
       prevEl: '.history-info-buttons__right',
     },
   });
+  var historySlider = new Swiper('.history-slider-narrow', {
+    // Optional parameters
+    loop: true,
+    slidesPerView: 1,
+    loopFillGroupWithBlank: false,
+    spaceBetween: 24,
+    autoHeight: false,
+    slidesPerColumn: 2,
+    // Navigation arrows
+    navigation: {
+      nextEl: '.history-info-buttons__left',
+      prevEl: '.history-info-buttons__right',
+    },
+  });
 });

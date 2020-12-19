@@ -442,7 +442,7 @@
               class="card-image card-image__narrow"
             />
             <div class="card-info">
-              <h4 class="card-title" lang="en"></h4>
+              <!--<h4 class="card-title" lang="en"></h4>-->
               <span class="card-price"></span>
             </div>
             <!-- /.card-info -->
@@ -678,7 +678,6 @@
               class="card-image card-image__narrow"
             />
             <div class="card-info">
-              <h4 class="card-title" lang="en"></h4>
               <span class="card-price"></span>
             </div>
             <!-- /.card-info -->
@@ -914,7 +913,6 @@
               class="card-image card-image__narrow"
             />
             <div class="card-info">
-              <h4 class="card-title" lang="en"></h4>
               <span class="card-price"></span>
             </div>
             <!-- /.card-info -->
@@ -928,11 +926,13 @@
     <!-- /.trends -->
     <section class="reviews">
       <div class="container container-reviews">
-        <img
-          src="img/quote-left.svg"
-          alt="Slider: quote"
-          class="reviews-slider-avatar"
-        />
+        <h3>
+          <img
+            src="img/quote-left.svg"
+            alt="Slider: quote"
+            class="reviews-slider-avatar"
+          />
+        </h3>
         <div class="swiper-container reviews-slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -1013,9 +1013,9 @@
       <div class="container container-history">
         <div class="history-info">
           <a href="#" class="history-info-badge">Истории</a>
-          <h1 class="history-info-title history-info-title--wide" lang="en">
+          <h3 class="history-info-title history-info-title--wide" lang="en">
             Это История<br />Fashun
-          </h1>
+          </h3>
           <h1 class="history-info-title history-info-title--normal" lang="en">
             Это История Fashun
           </h1>
@@ -1280,6 +1280,39 @@
       <!-- /.history-container -->
     </section>
     <!-- /.history -->
+    <section class="newsletter">
+      <div class="newsletter-title">
+        <h3 class="newsletter-title-header" lang="en">Подпишитесь</h3>
+        <span class="newsletter-title-text"
+          >Напишите свой адрес электронной почты. Мы будем присылать вам новости
+          из мира моды.</span
+        >
+      </div>
+      <!-- /.newsletter-title -->
+      <div class="newsletter-block">
+        <form
+          action="subscribe.php"
+          method="POST"
+          class="form subscribe newsletter__subscribe"
+        >
+          <div class="subscribe__input-group">
+            <svg class="icon">
+              <use xlink:href="#email"></use>
+            </svg>
+            <input
+              type="email"
+              class="input subscribe__input"
+              placeholder="Ваш Email"
+              name="email"
+              required
+            />
+          </div>
+          <button class="subscribe__button" type="submit">Подписаться</button>
+        </form>
+      </div>
+      <!-- /.newsletter-block -->
+    </section>
+    <!-- /.newsletter -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>

@@ -57,6 +57,19 @@
       margin-right: 12px
     &-title
       font-size: 22px
+  .newsletter
+    &-title
+      flex-basis: 50%
+      align-items: flex-start
+      &-header, &-text
+        margin-left: 50px
+        padding: 0
+    &-block
+      flex-basis: 50%
+      align-items: flex-end
+    &__subscribe
+      margin-left: 0
+      margin-right: 50px
 @media (max-width: 1148px)
   .card
     &-item
@@ -126,6 +139,20 @@
   .history
     &-slider
       margin: 0
+  .newsletter
+    flex-direction: column
+    align-items: center
+    &-title
+      justify-content: flex-end
+      text-align: center
+      align-items: center
+      &-header, &-text
+        margin: 0
+        padding: 0
+    &-block
+      justify-content: flex-start
+    &__subscribe
+      margin: 40px 0 0 0
 @media (max-width: 954px)
   .card
     &-item
@@ -163,7 +190,7 @@
       max-width: 630px
       min-height: 415px
       padding: 0
-      margin: -113px auto 80px
+      margin: -131px auto 97px
   .navbar
     position: fixed
     top: 0
@@ -280,6 +307,9 @@
       height: 32px
       padding-top: 10px
   .reviews
+    &-title
+      margin-top: 15px
+      margin-bottom: 0
     &-slider
       &-avatar
         margin-bottom: 6px
@@ -301,6 +331,17 @@
     &-cards
       &__image
         width: 322px
+  .newsletter
+    height: 402px
+    margin-top: 81px
+    &-title
+      justify-content: flex-start
+      margin-top: 65px
+      &-header
+        margin-bottom: 20px
+    &-block
+      justify-content: flex-start
+      margin-top: -15px
 @media (max-width: 767px)
   .container
     &-reviews

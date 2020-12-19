@@ -9,12 +9,13 @@
   background-position: center
   display: flex
   flex-direction: row
+  margin-top: 140px
   &-title
     display: flex
     flex-basis: 48%
     flex-direction: column
     justify-content: center
-    align-items: center
+    align-items: flex-start
     &-header
       font-family: 'HK-Grotesk-Bold',sans-serif
       font-style: normal
@@ -23,9 +24,84 @@
       line-height: 60px
       letter-spacing: 0.2px
       color: #FFFFFF
+      margin-bottom: 14px
+      margin-top: -10px
+      padding-left: 150px
+    &-text
+      /*width: 436px*/
+      height: 64px
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 32px
+      color: #FFFFFF
+      padding-left: 150px
+      margin-top: 5px
   &-block
     display: flex
     flex-basis: 48%
     flex-direction: column
     justify-content: center
     align-items: center
+  &__subscribe
+    margin-left: -67px
+.subscribe
+  &__input
+    width: 100%
+    height: 100%
+    background: #FFFFFF
+    border: 1px solid #C3CAD9
+    box-sizing: border-box
+    border-radius: 8px
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    padding-left: 48px
+    padding-right: 191px
+    z-index: 5
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    &:active
+      outline: none
+      border: none
+    &:active, &:hover, &:focus
+      outline: 0
+      outline-offset: 0
+    &-group
+      width: 447px
+      height: 56px
+      display: flex
+      position: relative
+      outline: none
+      border: none
+    &-icon
+      width: 18px
+      height: 16px
+      filter: brightness(0) saturate(100%) invert(19%) sepia(8%) saturate(3867%) hue-rotate(165deg) brightness(95%) contrast(93%)
+      position: absolute
+      top: 20px
+      left: 20px
+      bottom: 18px
+      z-index: 10
+  &__button
+    width: 177px
+    height: 47px
+    background: $primary
+    border-radius: 4px
+    color: #FFFFFF
+    position: absolute
+    top: 5px
+    right: 5px
+    bottom: 5px
+    z-index: 20
+    outline: none
+    border: none
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 25px
+    text-align: center

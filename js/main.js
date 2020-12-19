@@ -37,8 +37,6 @@ $(document).ready(function () {
 
   var historySliderButtonLeft = $('.history-info-buttons__image--left');
   var historySliderButtonRight = $('.history-info-buttons__image--right');
-  //historySliderButtonLeft.addClass("button-off");
-  //historySliderButtonRight.addClass("button-off");
 
   historySliderButtonLeft.on("click", function (event) {
     historySliderButtonLeft.removeClass("button-off");

@@ -10,7 +10,6 @@ $(document).ready(function () {
   tabsItem.on("click", function(event) {
     var activeContent = $(this).attr("data-target");
     tabsItem.removeClass("trends-title__tabs-item--accent");
-    console.log('activeContent: ',activeContent);
     contentItem.removeClass("trends-cards--visible");
     $(activeContent).addClass("trends-cards--visible");
     $(this).addClass("trends-title__tabs-item--accent");
@@ -34,6 +33,24 @@ $(document).ready(function () {
 
   $(".swiper-container").mouseleave(function() {
     reviewsSlider.autoplay.start();
+  });
+
+  var historySliderButtonLeft = $('.history-info-buttons__image--left');
+  var historySliderButtonRight = $('.history-info-buttons__image--right');
+  //historySliderButtonLeft.addClass("button-off");
+  //historySliderButtonRight.addClass("button-off");
+
+  historySliderButtonLeft.on("click", function (event) {
+    historySliderButtonLeft.removeClass("button-off");
+    historySliderButtonLeft.addClass("button-on");
+    historySliderButtonRight.removeClass("button-on");
+    historySliderButtonRight.addClass("button-off");
+  });
+  historySliderButtonRight.on("click", function (event) {
+    historySliderButtonLeft.removeClass("button-on");
+    historySliderButtonLeft.addClass("button-off");
+    historySliderButtonRight.removeClass("button-off");
+    historySliderButtonRight.addClass("button-on");
   });
 
   var historySlider = new Swiper('.history-slider', {

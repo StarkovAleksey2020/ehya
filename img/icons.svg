@@ -1,0 +1,10 @@
+<svg width="0" height="0" class="hidden">
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 56" id="button_left">
+    <rect x="1" y="1" width="52" height="54" rx="26" stroke="#959EAD" stroke-width="2"></rect>
+    <path d="M27.317 34.938c.312-.313.281-.782 0-1.094l-3.781-3.594h9a.74.74 0 00.75-.75v-1a.76.76 0 00-.75-.75h-9l3.78-3.563c.282-.312.313-.78 0-1.093l-.687-.688a.775.775 0 00-1.062 0L19.504 28.5a.684.684 0 000 1.031l6.063 6.094c.281.281.75.281 1.062 0l.688-.688z" fill="#959EAD"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" id="button_right">
+    <rect x="-1" y="1" width="54" height="54" rx="27" transform="matrix(-1 0 0 1 54 0)" stroke="#959EAD" stroke-width="2"></rect>
+    <path d="M26.969 34.938c-.313-.313-.282-.782 0-1.094l3.781-3.594h-9a.74.74 0 01-.75-.75v-1a.76.76 0 01.75-.75h9l-3.781-3.563c-.282-.312-.313-.78 0-1.093l.687-.688a.775.775 0 011.063 0L34.78 28.5a.684.684 0 010 1.031l-6.062 6.094c-.282.281-.75.281-1.063 0l-.687-.688z" fill="#959EAD"></path>
+  </symbol>
+</svg>

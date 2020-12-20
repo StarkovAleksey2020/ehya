@@ -13,6 +13,8 @@
       align-items: center
     &-history
       max-width: 90%
+    &-footer
+      max-height: 720px
   .navbar
     &-menu
       &__main
@@ -70,6 +72,36 @@
     &__subscribe
       margin-left: 0
       margin-right: 50px
+  .footer
+    &-wrapper
+      width: 80%
+      height: 572px
+      flex-direction: column
+      margin: 64px auto
+      flex-wrap: wrap
+    &-block
+      &-logo
+        display: flex
+        flex-basis: 100%
+      &-navigation
+        display: flex
+        flex-basis: 48%
+      &-service
+        display: flex
+        flex-basis: 48%
+        order: 4
+      &-company
+        display: flex
+        flex-basis: 48%
+        order: 3
+      &-contact
+        display: flex
+        flex-basis: 48%
+        order: 5
+      &-title
+        margin-bottom: 9px
+      &-menu
+        margin: 0
 @media (max-width: 1148px)
   .card
     &-item
@@ -140,8 +172,9 @@
     &-slider
       margin: 0
   .newsletter
-    flex-direction: column
-    align-items: center
+    &-wrapper
+      flex-direction: column
+      align-items: center
     &-title
       justify-content: flex-end
       text-align: center
@@ -334,6 +367,9 @@
   .newsletter
     height: 402px
     margin-top: 81px
+    &-wrapper
+      height: 402px
+      margin: 0
     &-title
       justify-content: flex-start
       margin-top: 65px
@@ -342,6 +378,20 @@
     &-block
       justify-content: flex-start
       margin-top: -15px
+  .footer
+    &-wrapper
+      width: 652px
+    &-block
+      &-logo
+        margin-right: 21px
+      &-title
+        margin-bottom: 30px
+      &-navigation
+        margin-right: 28px
+      &-company
+        padding-top: 24px
+      &-contact
+        padding-top: 24px
 @media (max-width: 767px)
   .container
     &-reviews
@@ -350,6 +400,8 @@
     &-history
       max-width: 100%
       padding: 47px 20px
+    &-footer
+      max-height: 1096px
   .collection
     &-gallery
       width: 290px
@@ -432,6 +484,30 @@
       &-history
         height: calc((100% - 24px) / 2)
         overflow: hidden
+  .footer
+    &-wrapper
+      width: 263px
+      height: 100%
+    &-block
+      &-logo
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-right: 21px
+        order: 5
+      &-title
+        margin-bottom: 20px
+      &-navigation
+        margin-bottom: 6px
+      &-service
+        order: 2
+        margin-bottom: 6px
+      &-company
+        padding: 0
+        margin-bottom: 6px
+      &-contact
+        margin-bottom: 67px
+        order: 4
 @media (max-width: 576px)
   .container
     &-navbar
@@ -558,8 +634,11 @@
           width: 48px
           height: 48px
   .newsletter
-    min-height: 414px
-    margin-top: -17px
+    &-wrapper
+      min-height: 414px
+      margin-top: -17px
+    &-block
+      align-items: center
     &-title
       margin-top: 60px
       &-text
@@ -762,6 +841,46 @@
         margin: 20px 10px -16px 20px
       &__image
         max-height: 277px
+  .newsletter
+    height: 397px
+    margin-top: 0
+  .footer
+    &-wrapper
+      width: 253px
+      margin-top: 48px
+    &-block
+      &-title
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 22px
+      &-menu
+        &__item
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: 20px
+          margin-bottom: 15px
+      &-navigation
+        margin-bottom: 15px
+      &-service
+        margin-bottom: 15px
+      &-company
+        margin-bottom: 15px
+      &-contact
+        padding: 0
+        margin-bottom: 50px
+      &-logo
+        &__text
+          width: 100%
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: 24px
+          text-align: center
+          margin-top: 11px
+          margin-bottom: 21px
+          padding-right: 14px
 @media only screen and (max-device-height: 750px) and (orientation: landscape)
   .container
     &-navbar

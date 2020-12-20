@@ -1281,41 +1281,46 @@
     </section>
     <!-- /.history -->
     <section class="newsletter">
-      <div class="newsletter-title">
-        <h3 class="newsletter-title-header" lang="en">Подпишитесь</h3>
-        <span class="newsletter-title-text newsletter-title-text--wide"
-          >Напишите свой адрес электронной почты.<br />
-          Мы будем присылать вам новости из мира моды.</span
-        >
-        <span class="newsletter-title-text newsletter-title-text--narrow"
-          >Напишите свой адрес электронной<br />
-          почты. Мы будем присылать вам<br />
-          новости из мира моды.</span
-        >
+      <div class="newsletter-wrapper">
+        <div class="newsletter-title">
+          <h3 class="newsletter-title-header" lang="en">Подпишитесь</h3>
+          <span class="newsletter-title-text newsletter-title-text--wide"
+            >Напишите свой адрес электронной почты.<br />
+            Мы будем присылать вам новости из мира моды.</span
+          >
+          <span class="newsletter-title-text newsletter-title-text--narrow"
+            >Напишите свой адрес электронной<br />
+            почты. Мы будем присылать вам<br />
+            новости из мира моды.</span
+          >
+        </div>
+        <!-- /.newsletter-title -->
+        <div class="newsletter-block">
+          <form
+            action="subscribe.php"
+            method="POST"
+            class="form subscribe newsletter__subscribe"
+          >
+            <div class="subscribe__input-group">
+              <svg class="icon subscribe__input-icon">
+                <use xlink:href="img/icons.svg#email"></use>
+              </svg>
+              <input
+                id="target"
+                type="email"
+                class="input subscribe__input"
+                placeholder="Ваш Email"
+                name="email"
+                required
+              />
+              <button class="subscribe__button" type="submit">
+                Подписаться
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
-      <!-- /.newsletter-title -->
-      <div class="newsletter-block">
-        <form
-          action="subscribe.php"
-          method="POST"
-          class="form subscribe newsletter__subscribe"
-        >
-          <div class="subscribe__input-group">
-            <svg class="icon subscribe__input-icon">
-              <use xlink:href="img/icons.svg#email"></use>
-            </svg>
-            <input
-              id="target"
-              type="email"
-              class="input subscribe__input"
-              placeholder="Ваш Email"
-              name="email"
-              required
-            />
-            <button class="subscribe__button" type="submit">Подписаться</button>
-          </div>
-        </form>
-      </div>
+      <!-- /.newsletter-wrapper -->
       <!-- /.newsletter-block -->
     </section>
     <!-- /.newsletter -->

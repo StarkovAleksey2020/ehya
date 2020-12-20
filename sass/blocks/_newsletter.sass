@@ -1,5 +1,5 @@
 .newsletter
-  height: 338px
+  min-height: 338px
   width: 100%
   position: relative
   padding: 0
@@ -13,12 +13,13 @@
   justify-content: center
   &-wrapper
     width: 1076px
+    min-height: 338px
     display: flex
     padding: 0
     margin: 0 59px 0 0
     justify-content: space-between
   &-title
-    width: 436px
+    /*width: 436px*/
     display: flex
     /*flex-basis: 48%*/
     flex-direction: column
@@ -37,7 +38,7 @@
       /*padding-left: 150px*/
     &-text
       /*width: 436px*/
-      height: 64px
+      min-height: 64px
       font-style: normal
       font-weight: normal
       font-size: 18px
@@ -48,13 +49,14 @@
       &--narrow
         display: none
   &-block
-    width: 447px
+    /*width: 447px*/
     display: flex
     /*flex-basis: 48%*/
     flex-direction: column
     justify-content: center
     align-items: center
   &__subscribe
+    min-height: 56px
 .subscribe
   &__input
     width: 100%
@@ -83,7 +85,7 @@
       outline-offset: 0
     &-group
       width: 447px
-      height: 56px
+      min-height: 56px
       display: flex
       position: relative
       outline: none
@@ -99,14 +101,14 @@
       z-index: 10
   &__button
     width: 177px
-    height: 47px
+    min-height: 47px
     background: $primary
     border-radius: 4px
     color: #FFFFFF
     position: absolute
     top: 5px
     right: 5px
-    bottom: 5px
+    /*bottom: 5px*/
     z-index: 20
     outline: none
     border: none

@@ -218,7 +218,7 @@
       max-height: 626px
       width: 95%
     &-collection
-      margin: 79px auto 100px
+      margin: 4px auto 100px
     &-reviews
       max-width: 630px
       min-height: 415px
@@ -267,9 +267,9 @@
       transform: scale(1.12)
     &-block
       padding-left: 28px
-      padding-top: 36px
+      padding-top: 41px
     &-title
-      margin: 19px 0 25px
+      margin: 24px 0 25px
       font-size: 48px
       line-height: 60px
     &-text
@@ -311,7 +311,13 @@
     &-title
       flex-wrap: wrap
       justify-content: center
-      margin-bottom: 130px
+      margin-bottom: 57px
+      &__tabs
+        flex-basis: 100%
+        justify-content: center
+        &-item
+          &:nth-child(2)
+            margin: 0 38px
       &__header
         flex-basis: 100%
         text-align: center
@@ -323,6 +329,7 @@
       max-width: 280px
       max-height: 441px
       width: 100%
+      margin-bottom: 48px
     &-image
       max-height: 350px
       width: 100%
@@ -341,7 +348,7 @@
       padding-top: 10px
   .reviews
     &-title
-      margin-top: 15px
+      margin-top: 37px
       margin-bottom: 0
     &-slider
       &-avatar
@@ -361,12 +368,15 @@
     &-pagination
       bottom: 7px
   .history
+    &-info
+      padding: 96px 0 0 0
     &-cards
+      margin: -56px 0 0 0
       &__image
         width: 322px
   .newsletter
     height: 402px
-    margin-top: 81px
+    margin-top: 80px
     &-wrapper
       height: 402px
       margin: 0
@@ -562,7 +572,7 @@
   .card
     &-item
       /*max-width: 183px*/
-      height: 441px
+      min-height: 441px
       width: 45%
     &-image
       &__wide, &__normal
@@ -667,7 +677,7 @@
       padding-right: 10px
       &-group
         width: 280px
-        height: 48px
+        min-height: 48px
         flex-direction: column
       &-icon
         top: 17px
@@ -683,7 +693,7 @@
   .card
     &-item
       /*max-width: 140px*/
-      max-height: 360px
+      min-height: 360px
       width: 45%
     &-image
       max-height: 285px
@@ -702,7 +712,7 @@
     &-reviews
       min-height: 555px
       max-width: 280px
-      margin: -117px auto 80px
+      margin: -95px auto 80px
     &-history
       padding: 0
   .main
@@ -762,9 +772,12 @@
         margin: 0 0 22px 0
       &__link
         display: none
+      &__text
+        &--mobile
+          margin: 0 0 133px 0
   .trends
     &-title
-      margin-bottom: 91px
+      margin-bottom: 35px
       &__header
         font-size: 28px
         margin-bottom: 14px
@@ -772,11 +785,13 @@
         width: 218px
         &-item
           font-size: 16px
+          &:nth-child(2)
+            margin: 0 17px
   .card
     &-item
       max-width: 141px
-      max-height: 234px
-      margin-bottom: 20px
+      min-height: 234px
+      margin-bottom: -8px
     &-image
       &__wide, &__normal
         display: none
@@ -784,7 +799,7 @@
         display: flex
         height: 171px
     &-info
-      padding: 12px 0
+      padding: 8px 0 30px 0
     &-title
       font-style: normal
       font-weight: bold
@@ -835,15 +850,22 @@
         padding: 4px
       &-title
         &--narrow
-          margin: 24px auto 4px
+          margin: 15px auto 4px
     &-cards
+      margin: -73px 0 0 0
+      &__legend
+        bottom: 40px
       &-title
-        margin: 20px 10px -16px 20px
+        margin: 20px 10px -43px 20px
       &__image
         max-height: 277px
   .newsletter
-    height: 397px
-    margin-top: 0
+    min-height: 414px
+    margin-top: -16px
+    &-title
+      margin-top: 76px
+    &-block
+      margin-top: 3px
   .footer
     &-wrapper
       width: 253px
@@ -860,11 +882,11 @@
           font-weight: normal
           font-size: 14px
           line-height: 20px
-          margin-bottom: 15px
+          margin-bottom: 12px
       &-navigation
         margin-bottom: 15px
       &-service
-        margin-bottom: 15px
+        margin-bottom: 18px
       &-company
         margin-bottom: 15px
       &-contact

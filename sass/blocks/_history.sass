@@ -2,6 +2,7 @@
   &-swiper
     &-slide
       width: 340px
+      min-height: 475px
   &-info
     min-height: 485px
     display: flex
@@ -9,7 +10,7 @@
     flex-basis: 40%
     &-badge
       width: 102px
-      height: 32px
+      min-height: 32px
       font-family: Open Sans, sans-serif
       font-style: normal
       font-weight: 600
@@ -66,11 +67,12 @@
     padding: 0 0 0 5px
     &__item
       width: 322px
-      height: 475px
+      min-height: 475px
       position: relative
       /*margin-right: 18px*/
       &:first-child
         margin-right: 18px
+        min-height: 475px
     &__image
       width: 312px
       max-height: 317px
@@ -86,7 +88,7 @@
         display: none
     &__legend
       width: 312px
-      height: 178px
+      min-height: 178px
       display: flex
       flex-direction: row
       flex-wrap: wrap
@@ -116,7 +118,7 @@
       color: $secondary
   &-slider
     width: 686px
-    height: 450px
+    min-height: 450px
     margin: 0 0 0 10px
     &-narrow
       display: none

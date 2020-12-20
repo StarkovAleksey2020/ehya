@@ -19,15 +19,19 @@ body
       background-color: $primary
   &-main
     max-width: 1280px
+    min-height: 700px
     width: 89%
-    height: 700px
+    /*height: 700px*/
     padding: 0
     margin: 0 auto
     overflow: hidden
     position: relative
+    /*background-image: url("../img/image-main.png")*/
+    /*background-repeat: no-repeat*/
+    /*background-size: cover*/
   &-collection
     max-width: 1140px
-    height: 490px
+    min-height: 490px
     padding: 0
     margin: 120px auto 100px
     overflow: hidden
@@ -38,7 +42,7 @@ body
     max-width: 1191px
     min-height: 1135px
     padding: 0 30px
-    margin: 145px auto
+    margin: 123px auto
     overflow: hidden
     position: relative
     display: flex
@@ -47,7 +51,7 @@ body
     max-width: 800px
     min-height: 389px
     padding: 0
-    margin: -95px auto 80px
+    margin: -51px auto 80px
     overflow: hidden
     position: relative
     display: flex
@@ -78,7 +82,6 @@ body
   &-footer
     max-width: 100%
     min-height: 520px
-
 .button
   &-on
     filter: brightness(0) saturate(100%) invert(19%) sepia(8%) saturate(3867%) hue-rotate(165deg) brightness(95%) contrast(93%)

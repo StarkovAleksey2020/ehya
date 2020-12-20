@@ -1283,9 +1283,14 @@
     <section class="newsletter">
       <div class="newsletter-title">
         <h3 class="newsletter-title-header" lang="en">Подпишитесь</h3>
-        <span class="newsletter-title-text"
+        <span class="newsletter-title-text newsletter-title-text--wide"
           >Напишите свой адрес электронной почты.<br />
           Мы будем присылать вам новости из мира моды.</span
+        >
+        <span class="newsletter-title-text newsletter-title-text--narrow"
+          >Напишите свой адрес электронной<br />
+          почты. Мы будем присылать вам<br />
+          новости из мира моды.</span
         >
       </div>
       <!-- /.newsletter-title -->
@@ -1300,6 +1305,7 @@
               <use xlink:href="img/icons.svg#email"></use>
             </svg>
             <input
+              id="target"
               type="email"
               class="input subscribe__input"
               placeholder="Ваш Email"

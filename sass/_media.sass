@@ -557,6 +557,46 @@
         &__image
           width: 48px
           height: 48px
+  .newsletter
+    min-height: 414px
+    margin-top: -17px
+    &-title
+      margin-top: 60px
+      &-text
+        &--wide
+          display: none
+        &--narrow
+          display: flex
+          font-style: normal
+          font-weight: normal
+          font-size: 16px
+          line-height: 28px
+          text-align: center
+          color: #FAFAFB
+      &-header
+        font-style: normal
+        font-weight: bold
+        font-size: 28px
+        line-height: 36px
+        text-align: center
+        letter-spacing: 0.2px
+        margin-bottom: 27px
+    &__subscribe
+      margin: 14px 0 0 0
+  .subscribe
+    &__input
+      padding-right: 10px
+      &-group
+        width: 280px
+        height: 48px
+        flex-direction: column
+      &-icon
+        top: 17px
+    &__button
+      width: 280px
+      right: 0
+      bottom: 0
+      top: 59px
 @media (max-width: 440px)
   .trends
     &-cards
@@ -686,6 +726,9 @@
       margin: 0 0 -10px 2px
       padding: 0 0 10px 0
   .reviews
+    &-title
+      margin-top: 0
+      margin-bottom: -4px
     &-slider
       &-avatar
         margin-bottom: -8px

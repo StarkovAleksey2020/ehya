@@ -70,7 +70,7 @@ body
     align-items: end
   &-thanks
     max-width: 1150px
-    min-height: 606px
+    min-height: 100px
     padding: 0
     margin: 65px auto 80px
     overflow: hidden
@@ -93,16 +93,6 @@ body
   &-off
     filter: brightness(0) saturate(100%) invert(73%) sepia(15%) saturate(259%) hue-rotate(178deg) brightness(83%) contrast(95%)
     outline: none
-.invalid
-  color: $primary
-  border-bottom: 1px solid $primary
-label.invalid
-  position: absolute
-  bottom: -12px
-  font-size: 12px
-  line-height: 12px
-  border-bottom: none
-  color: #FFFFFF
 .line
   width: 78%
   height: 1px
@@ -125,3 +115,56 @@ label.invalid
       flex-direction: row
       justify-content: flex-start
       align-items: center
+.input
+  background-color: #fff
+  border-radius: 4px
+  border: none
+  padding: 0 23px
+  height: 50px
+.message
+  background-color: #fff
+  border-radius: 4px
+  padding: 18px 23px
+  border: none
+.button
+  width: 160px
+  min-height: 45px
+  padding: 18px
+  font-style: normal
+  font-weight: bold
+  font-size: 12px
+  line-height: 15px
+  color: $primary
+  background-color: $quote
+  border-radius: 4px
+  border: none
+  overflow: hidden
+  text-overflow: ellipsis
+  /*white-space: nowrap*/
+  cursor: pointer
+  &:hover
+    background-color: #ef3215
+  &__home
+    margin-top: 15px
+    display: flex
+    justify-content: center
+    &-image
+      margin-right: 8px
+      height: max-content
+.form
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  padding: 10px 1px 0 5px
+  margin-bottom: 75px
+.invalid
+  color: $primary
+  border-bottom: 1px solid $primary
+label.invalid
+  position: absolute
+  bottom: -12px
+  font-size: 12px
+  line-height: 12px
+  border-bottom: none
+  color: #FFFFFF

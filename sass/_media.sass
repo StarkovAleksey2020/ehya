@@ -178,6 +178,7 @@
     &-wrapper
       flex-direction: column
       align-items: center
+      justify-content: center
     &-title
       justify-content: flex-end
       text-align: center
@@ -481,10 +482,11 @@
         width: 270px
         min-height: 407px
         margin-bottom: 24px
+        margin-right: 10px
         &:first-child
           width: 280px
           min-height: 407px
-          margin: 0
+          margin: 0 0 24px 0
       &__image
         width: 270px
         &--wide, &--normal
@@ -494,15 +496,16 @@
       &__legend
         width: 270px
         min-height: 150px
+        bottom: -1px
       &-title
-        width: 230px
+        width: 243px
         min-height: 72px
         font-style: normal
         font-weight: 500
         font-size: 20px
         line-height: 24px
         letter-spacing: 0.2px
-        margin: 20px 20px 0 20px
+        margin: 20px 10px 17px 16px
         &-more
           font-style: normal
           font-weight: 600
@@ -732,7 +735,7 @@
   .container
     max-width: 100%
     &-navbar
-      max-width: 88%
+      max-width: 86%
       margin: 1px auto 23px
     &-main
       min-height: 899px
@@ -747,6 +750,8 @@
     &-history
       padding: 0
       margin: 15px auto -9px
+    &-footer
+      min-height: 1045px
   .main
     margin-top: 86px
     &-image
@@ -887,9 +892,9 @@
       min-height: 919px
       margin: -73px 0 0 0
       &__legend
-        bottom: 40px
+        bottom: -1px
       &-title
-        margin: 20px 10px -43px 20px
+        margin: 20px 10px 17px 20px
       &__image
         max-height: 277px
   .newsletter
@@ -902,8 +907,12 @@
   .footer
     &-wrapper
       width: 253px
-      margin-top: 48px
+      min-height: 999px
+      margin: 48px 0 0 30px
+      display: flex
+      align-items: flex-start
     &-block
+      min-height: 167px
       &-title
         font-style: normal
         font-weight: bold
@@ -917,15 +926,22 @@
           line-height: 20px
           margin-bottom: 12px
       &-navigation
-        margin-bottom: 15px
+        min-height: 202px
+        margin-bottom: -7px
       &-service
-        margin-bottom: 18px
+        min-height: 202px
+        padding-top: 16px
       &-company
-        margin-bottom: 15px
+        min-height: 167px
+        padding-top: 3px
       &-contact
         padding: 0
-        margin-bottom: 50px
+        margin-bottom: 0
+        padding-top: 1px
       &-logo
+        margin-right: 0
+        margin-top: -13px
+        padding-left: 8px
         &__text
           width: 100%
           font-style: normal
@@ -935,7 +951,8 @@
           text-align: center
           margin-top: 11px
           margin-bottom: 21px
-          padding-right: 14px
+          margin-right: 11px
+
 @media only screen and (max-device-height: 750px) and (orientation: landscape)
   .container
     &-navbar

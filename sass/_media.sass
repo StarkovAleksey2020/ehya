@@ -11,6 +11,9 @@
       margin: 120px auto 100px
       flex-direction: column
       align-items: center
+    &-reviews
+      max-width: 96%
+      min-height: 415px
     &-history
       max-width: 90%
     &-footer
@@ -215,15 +218,18 @@
         padding-top: 22px
         background-color: $primary
     &-main
-      max-height: 626px
-      width: 95%
+      min-height: 624px
+      width: 728px
     &-collection
       margin: 4px auto 100px
     &-reviews
       max-width: 630px
-      min-height: 415px
-      padding: 0
-      margin: -131px auto 97px
+      min-height: 462px
+      /*padding: 0*/
+      margin: -131px auto 64px
+    &-history
+      min-height: 887px
+      margin: 65px auto -9px
   .navbar
     position: fixed
     top: 0
@@ -262,21 +268,25 @@
         background-color: #333
   .main
     margin-top: 102px
+    margin-bottom: 0
     &-image
-      object-position: 67% 16px
-      transform: scale(1.12)
+      /*object-position: 68% 18px*/
+      /*transform: scale(1.12)*/
+      &-wide
+        /*min-height: 624px*/
     &-block
+      min-height: 552px
       padding-left: 28px
-      padding-top: 41px
+      padding-top: 36px
     &-title
-      margin: 24px 0 25px
+      margin: 18px 0 25px
       font-size: 48px
       line-height: 60px
     &-text
       max-width: 77%
       line-height: 32px
       font-size: 18px
-      margin: 0 0 37px 0
+      margin: 0 0 57px 0
     &-button
       padding: 15px 41px
     &-menu
@@ -351,6 +361,7 @@
       margin-top: 37px
       margin-bottom: 0
     &-slider
+      min-height: 295px
       &-avatar
         margin-bottom: 6px
       &__text
@@ -369,7 +380,9 @@
       bottom: 7px
   .history
     &-info
-      padding: 96px 0 0 0
+      padding: 88px 0 0 0
+    &-slider
+      margin: -9px 0 0 0
     &-cards
       margin: -56px 0 0 0
       &__image

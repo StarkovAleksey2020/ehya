@@ -85,8 +85,14 @@ body
 .button
   &-on
     filter: brightness(0) saturate(100%) invert(19%) sepia(8%) saturate(3867%) hue-rotate(165deg) brightness(95%) contrast(93%)
+    outline: none
+    &:active
+      outline: none
+    &:focus
+      outline: none
   &-off
     filter: brightness(0) saturate(100%) invert(73%) sepia(15%) saturate(259%) hue-rotate(178deg) brightness(83%) contrast(95%)
+    outline: none
 .invalid
   color: $primary
   border-bottom: 1px solid $primary

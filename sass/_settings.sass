@@ -30,7 +30,7 @@ body
     /*background-repeat: no-repeat*/
     /*background-size: cover*/
   &-collection
-    max-width: 1140px
+    max-width: 1128px
     min-height: 490px
     padding: 0
     margin: 120px auto 100px
@@ -60,8 +60,8 @@ body
   &-history
     max-width: 1150px
     min-height: 606px
-    padding: 0
-    margin: 65px auto 80px
+    padding: 120px 0 0 3px
+    margin: 0px auto 80px
     overflow: hidden
     position: relative
     display: flex
@@ -81,7 +81,7 @@ body
     align-items: end
   &-footer
     max-width: 100%
-    min-height: 520px
+    min-height: 393px
 .button
   &-on
     filter: brightness(0) saturate(100%) invert(19%) sepia(8%) saturate(3867%) hue-rotate(165deg) brightness(95%) contrast(93%)
@@ -103,3 +103,25 @@ label.invalid
   line-height: 12px
   border-bottom: none
   color: #FFFFFF
+.line
+  width: 78%
+  height: 1px
+  margin: 0 auto
+  background: #e5e5e5
+.swiper
+  &-container
+    &-narrow
+      width: 662px
+      min-height: 475px
+      margin-left: auto
+      margin-right: auto
+      display: flex
+.swiper
+  &-slide
+    &-narrow
+      width: 322px
+      min-height: 475px
+      display: flex
+      flex-direction: row
+      justify-content: flex-start
+      align-items: center

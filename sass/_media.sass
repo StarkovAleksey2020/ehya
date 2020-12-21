@@ -226,10 +226,11 @@
       max-width: 630px
       min-height: 462px
       /*padding: 0*/
-      margin: -131px auto 64px
+      margin: -131px auto 73px
     &-history
       min-height: 887px
-      margin: 65px auto -9px
+      margin: -9px auto -9px
+      padding: 0
   .navbar
     position: fixed
     top: 0
@@ -384,7 +385,7 @@
     &-slider
       margin: -9px 0 0 0
     &-cards
-      margin: -56px 0 0 0
+      margin: -66px 0 10px 0
       &__image
         width: 322px
   .newsletter
@@ -415,6 +416,8 @@
         padding-top: 24px
       &-contact
         padding-top: 24px
+  .line
+    width: 95%
 @media (max-width: 767px)
   .container
     &-reviews
@@ -422,9 +425,9 @@
       min-height: 450px
     &-history
       max-width: 100%
-      padding: 47px 20px
+      padding: 0
     &-footer
-      max-height: 1096px
+      min-height: 1096px
   .collection
     &-gallery
       width: 290px
@@ -472,9 +475,16 @@
       width: 100%
   .history
     &-cards
+      min-height: 839px
+      width: 280px
       &__item
-        width: 280px
-        height: 407px
+        width: 270px
+        min-height: 407px
+        margin-bottom: 24px
+        &:first-child
+          width: 280px
+          min-height: 407px
+          margin: 0
       &__image
         width: 270px
         &--wide, &--normal
@@ -483,19 +493,21 @@
           display: flex
       &__legend
         width: 270px
-        height: 150px
+        min-height: 150px
       &-title
+        width: 230px
+        min-height: 72px
         font-style: normal
         font-weight: 500
         font-size: 20px
         line-height: 24px
         letter-spacing: 0.2px
         margin: 20px 20px 0 20px
-      &-more
-        font-style: normal
-        font-weight: 600
-        font-size: 16px
-        line-height: 22px
+        &-more
+          font-style: normal
+          font-weight: 600
+          font-size: 16px
+          line-height: 22px
     &-slider
       display: none
       &-narrow
@@ -504,13 +516,19 @@
         display: flex
   .swiper
     &-slide
-      &-history
-        height: calc((100% - 24px) / 2)
-        overflow: hidden
+      &-narrow
+        width: 280px
+        min-height: 839px
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: center
   .footer
     &-wrapper
       width: 263px
-      height: 100%
+      min-height: 1096px
+      display: flex
+      flex-direction: row
     &-block
       &-logo
         display: flex
@@ -714,7 +732,7 @@
   .container
     max-width: 100%
     &-navbar
-      max-width: 85%
+      max-width: 88%
       margin: 1px auto 23px
     &-main
       min-height: 899px
@@ -725,9 +743,10 @@
     &-reviews
       min-height: 555px
       max-width: 280px
-      margin: -95px auto 80px
+      margin: -95px auto 64px
     &-history
       padding: 0
+      margin: 15px auto -9px
   .main
     margin-top: 86px
     &-image
@@ -865,6 +884,7 @@
         &--narrow
           margin: 15px auto 4px
     &-cards
+      min-height: 919px
       margin: -73px 0 0 0
       &__legend
         bottom: 40px

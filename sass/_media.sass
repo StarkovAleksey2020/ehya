@@ -859,6 +859,68 @@
       letter-spacing: 0.1px
       margin: 0 0 -10px 2px
       padding: 0 0 10px 0
+@media (min-width: 320px) and (max-width: 450px)
+  .container
+    max-width: 100%
+    &-navbar
+      max-width: 86%
+      margin: 1px auto 0px
+    &-main
+      min-height: 899px
+    &-collection
+      margin: 64px auto 100px
+  .main
+    margin-top: 86px
+    &-image
+      object-position: 80% top
+      transform: none
+      &-wide
+        display: none
+      &-narrow
+        display: flex
+    &-block
+      padding: 0
+      max-width: 100%
+      display: flex
+      justify-content: flex-end
+      align-items: center
+    &-badge
+      max-width: 196px
+      padding: 4px 26px
+    &-title
+      font-size: 32px
+      font-style: normal
+      font-weight: bold
+      font-size: 32px
+      line-height: 40px
+      text-align: center
+      letter-spacing: 0.2px
+      margin: 13px 4px -55px 0px
+    &-text
+      height: 140px
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 28px
+      text-align: center
+      margin: 0 0 23px 0
+    &-button
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 22px
+      text-align: center
+      padding: 13px 49px
+    &-menu
+      width: 100%
+      margin: 14px 8px 31px
+      height: 77px
+  .navbar
+    &-bottom
+      &--visible
+        top: 64px
+  .line
+    width: 100%
 @media (max-width: 320px)
   .container
     max-width: 100%
@@ -1101,8 +1163,6 @@
       font-size: 18px
       line-height: 20px
       margin-bottom: 20px
-  .line
-    width: 100%
 @media only screen and (max-device-height: 750px) and (orientation: landscape)
   .container
     &-navbar

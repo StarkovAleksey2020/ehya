@@ -9,7 +9,7 @@
     flex-direction: column
     flex-basis: 40%
     &-badge
-      width: 102px
+      max-width: 102px
       min-height: 32px
       font-family: Open Sans, sans-serif
       font-style: normal
@@ -91,6 +91,7 @@
       width: 322px
       min-height: 475px
       position: relative
+      /*overflow: auto*/
       /*margin-right: 18px*/
       &:first-child
         margin-right: 18px
@@ -119,12 +120,13 @@
       flex-direction: row
       flex-wrap: wrap
       position: absolute
-      bottom: 0
+      /*bottom: 0*/
       left: 10px
+      top: 62%
       background-color: $bgr-legend
     &-title
       width: 260px
-      min-height: 104px
+      height: 104px
       font-family: 'HK-Grotesk-Medium', sans-serif
       font-style: normal
       font-weight: 500
@@ -133,6 +135,9 @@
       letter-spacing: 0.2px
       color: $primary
       margin: 18px 32px 12px 20px
+      white-space: inherit
+      overflow: hidden
+      text-overflow: ellipsis
     &-more
       width: 250px
       font-style: normal

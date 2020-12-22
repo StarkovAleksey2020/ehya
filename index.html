@@ -13,8 +13,18 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!-- Back to top button -->
+    <a id="button"></a>
     <header class="navbar">
       <div class="container container-navbar">
         <div class="navbar-top">
@@ -46,6 +56,13 @@
             <span class="menu-button__line"></span>
             <span class="menu-button__line"></span>
             <span class="menu-button__line"></span>
+          </button>
+          <button class="menu-close hiden">
+            <img
+              src="img/close.svg"
+              alt="Icon: close"
+              class="menu-close-image"
+            />
           </button>
         </div>
       </div>
@@ -433,21 +450,23 @@
           </div>
           <!-- /.card-item -->
           <div class="card-item">
-            <img
-              src="img/look-more-1440.jpg"
-              alt="Trend: look more"
-              class="card-image card-image__wide"
-            />
-            <img
-              src="img/look-more-768.jpg"
-              alt="Trend: look more"
-              class="card-image card-image__normal"
-            />
-            <img
-              src="img/look-more-320.jpg"
-              alt="Trend: look more"
-              class="card-image card-image__narrow"
-            />
+            <a href="#" class="card-item-look">
+              <img
+                src="img/look-more-1440.jpg"
+                alt="Trend: look more"
+                class="card-image card-image__wide"
+              />
+              <img
+                src="img/look-more-768.jpg"
+                alt="Trend: look more"
+                class="card-image card-image__normal"
+              />
+              <img
+                src="img/look-more-320.jpg"
+                alt="Trend: look more"
+                class="card-image card-image__narrow"
+              />
+            </a>
             <div class="card-info">
               <!--<h4 class="card-title" lang="en"></h4>-->
               <span class="card-price"></span>
@@ -1413,9 +1432,11 @@
         <!-- /.footer-wrapper -->
       </div>
       <!-- /.container -->
+      <!--
       <div id="top">
         <img src="img/upbutton.svg" class="top" alt="Button: top" />
       </div>
+      -->
     </section>
     <!-- /.footer -->
     <div class="modal">

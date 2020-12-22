@@ -1,7 +1,15 @@
 $(document).ready(function () {
-  var menuButton = $(".menu-button")
+  var menuButton = $(".menu-button");
+  var menuButtonClose = $(".menu-close");
   menuButton.on('click', function () {
     $(".navbar-bottom").toggleClass("navbar-bottom--visible");
+    menuButton.toggleClass("hiden");
+    menuButtonClose.toggleClass("hiden");
+  })
+  menuButtonClose.on('click', function () {
+    $(".navbar-bottom").toggleClass("navbar-bottom--visible");
+    menuButton.toggleClass("hiden");
+    menuButtonClose.toggleClass("hiden");
   })
 
   var tabsItem = $('.trends-title__tabs-item');
@@ -124,16 +132,16 @@ $(document).ready(function () {
       errorClass: "invalid",
       messages: {
         name: {
-          required: "Please specify your name",
-          minlength: "Minimum field length 2 characters",
+          required: "Пожалуйста укажите ваше имя",
+          minlength: "Минимальная длина поля 2 символа",
         },
         phone: {
-          required: "Please specify your phone number",
-          minlength: "Minimum field length 10 characters",
+          required: "Пожалуйста укажите ваш номер телефона",
+          minlength: "Минимальная длина поля 10 символов",
         },
         email: {
-          required: "Please specify your email",
-          email: "Email address format is name@domain.com",
+          required: "Пожалуйста укажите ваш email",
+          email: "Формат email - name@domain.com",
         },
       },
     });
@@ -141,8 +149,10 @@ $(document).ready(function () {
 
   var modalButton = $('[data-toggle=modal]');
   var closeModalButton = $(".modal__close");
+  var modalOverlay = $(".modal__overlay");
   modalButton.on('click', openModal);
-  closeModalButton.on('click', closeModal)
+  closeModalButton.on('click', closeModal);
+  modalOverlay.on('click', closeModal);
 
   $(document).keyup(function (e) {
     if (e.keyCode === 27) {
@@ -186,5 +196,20 @@ $(document).ready(function () {
     $('body,html').animate({scrollTop:0},700);
     });
   });
+
+var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
 
 });

@@ -38,19 +38,6 @@ $(document).ready(function () {
   var historySliderButtonLeft = $('.history-info-buttons__image--left');
   var historySliderButtonRight = $('.history-info-buttons__image--right');
 
-  historySliderButtonLeft.on("click", function (event) {
-    historySliderButtonLeft.removeClass("button-off");
-    historySliderButtonLeft.addClass("button-on");
-    historySliderButtonRight.removeClass("button-on");
-    historySliderButtonRight.addClass("button-off");
-  });
-  historySliderButtonRight.on("click", function (event) {
-    historySliderButtonLeft.removeClass("button-on");
-    historySliderButtonLeft.addClass("button-off");
-    historySliderButtonRight.removeClass("button-off");
-    historySliderButtonRight.addClass("button-on");
-  });
-
   var historySlider = new Swiper('.history-slider', {
     // Optional parameters
     loop: true,

@@ -1,15 +1,19 @@
 $(document).ready(function () {
   var menuButton = $(".menu-button");
   var menuButtonClose = $(".menu-close");
+  var goTopButton = $("#button");
+
   menuButton.on('click', function () {
     $(".navbar-bottom").toggleClass("navbar-bottom--visible");
     menuButton.toggleClass("hiden");
     menuButtonClose.toggleClass("hiden");
+    goTopButton.toggleClass("hiden");
   })
   menuButtonClose.on('click', function () {
     $(".navbar-bottom").toggleClass("navbar-bottom--visible");
     menuButton.toggleClass("hiden");
     menuButtonClose.toggleClass("hiden");
+    goTopButton.toggleClass("hiden");
   })
 
   var tabsItem = $('.trends-title__tabs-item');

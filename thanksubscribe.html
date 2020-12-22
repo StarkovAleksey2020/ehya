@@ -39,13 +39,20 @@
                 <a href="#" class="navbar-menu__link">Контакты</a>
               </li>
             </ul>
-            <a href="#" class="navbar-exit">Войти</a>
+            <button data-toggle="modal" class="navbar-exit">Войти</button>
           </div>
           <!-- /.navbar-menu -->
           <button class="menu-button navbar-top__menu-button">
             <span class="menu-button__line"></span>
             <span class="menu-button__line"></span>
             <span class="menu-button__line"></span>
+          </button>
+          <button class="menu-close hiden">
+            <img
+              src="img/close.svg"
+              alt="Icon: close"
+              class="menu-close-image"
+            />
           </button>
         </div>
       </div>
@@ -69,7 +76,12 @@
               <a href="#" class="navbar-menu__link">Контакты</a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link navbar-exit">Выйти</a>
+              <a
+                href="#"
+                data-toggle="modal"
+                class="navbar-menu__link navbar-exit"
+                >Войти</a
+              >
             </li>
           </ul>
           <!-- /.navbar-menu -->
@@ -83,10 +95,10 @@
         <div class="thanks-info">
           <div class="thanks-info__text">
             <div class="thanks-wrapper">
-              <h1 class="thanks-name thanks-info__name">Subscribed!</h1>
+              <h1 class="thanks-name thanks-info__name">Вы подписаны!</h1>
             </div>
             <p class="thanks-description thanks-info__description">
-              Now you will receive informational messages from our company.
+              Теперь Вам доступны информационные сообщения о нашей компании.
             </p>
             <button
               class="button button__home"
@@ -209,6 +221,61 @@
       <!-- /.container -->
     </section>
     <!-- /.footer -->
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img
+            src="img/close.svg"
+            alt="Icon: close"
+            class="modal__close-image"
+          />
+        </a>
+        <h3 class="modal__title modal__title--mb-4">Contact us</h3>
+        <form action="send.php" method="POST" class="form modal__form">
+          <div class="modal__input-group">
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Your Full Name*"
+              name="name"
+              required
+              minlength="2"
+            />
+          </div>
+          <div class="modal__input-group">
+            <input
+              type="tel"
+              class="input modal__input phoneInput"
+              placeholder="Phone Number*"
+              name="phone"
+              required
+            />
+          </div>
+          <div class="modal__input-group">
+            <input
+              type="email"
+              class="input modal__input"
+              placeholder="Your Email*"
+              name="email"
+              required
+            />
+          </div>
+          <textarea
+            cols="30"
+            rows="10"
+            class="message modal__message"
+            placeholder="Message"
+            name="message"
+          ></textarea>
+          <button class="button modal__button" type="submit">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
 
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>

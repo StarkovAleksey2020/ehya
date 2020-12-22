@@ -36,7 +36,7 @@ $(document).ready(function () {
     },
     pagination: {
       el: '.swiper-pagination',
-      clicable: true,
+      clickable: true,
     },
   });
   $(".swiper-container").mouseenter(function() {

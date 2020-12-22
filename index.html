@@ -24,19 +24,19 @@
           <div class="navbar-menu navbar-menu__top">
             <ul class="navbar-menu__main">
               <li class="navbar-menu__item">
-                <a href="#" class="navbar-menu__link">Главная</a>
+                <a href="#main" class="navbar-menu__link">Главная</a>
               </li>
               <li class="navbar-menu__item">
-                <a href="#" class="navbar-menu__link">Новинки</a>
+                <a href="#collection" class="navbar-menu__link">Новинки</a>
               </li>
               <li class="navbar-menu__item">
-                <a href="#" class="navbar-menu__link">Тренды</a>
+                <a href="#trends" class="navbar-menu__link">Тренды</a>
               </li>
               <li class="navbar-menu__item">
-                <a href="#" class="navbar-menu__link">Отзывы</a>
+                <a href="#reviews" class="navbar-menu__link">Отзывы</a>
               </li>
               <li class="navbar-menu__item">
-                <a href="#" class="navbar-menu__link">Контакты</a>
+                <a href="#footer" class="navbar-menu__link">Контакты</a>
               </li>
             </ul>
             <button data-toggle="modal" class="navbar-exit">Войти</button>
@@ -83,7 +83,7 @@
       </div>
       <!-- /.navbar-bottom -->
     </header>
-    <section class="main">
+    <section id="main" class="main">
       <div class="container container-main">
         <img
           src="img/image-main.png"
@@ -145,7 +145,7 @@
       </div>
       <!-- /.container -->
     </section>
-    <section class="collection">
+    <section id="collection" class="collection">
       <div class="container container-collection">
         <div class="collection-gallery">
           <img
@@ -201,7 +201,7 @@
       <!-- /.container -->
     </section>
     <!-- /.collection -->
-    <section class="trends">
+    <section id="trends" class="trends">
       <div class="container container-trends">
         <div class="trends-title">
           <h3 class="trends-title__header" lang="en">Тренды</h3>
@@ -931,7 +931,7 @@
       <!-- /.container-trends -->
     </section>
     <!-- /.trends -->
-    <section class="reviews">
+    <section id="reviews" class="reviews">
       <div class="container container-reviews">
         <h3 class="reviews-title">
           <img
@@ -1015,7 +1015,7 @@
     <!-- /.reviews -->
     <div class="line"></div>
     <!-- /.line -->
-    <section class="history">
+    <section id="history" class="history">
       <div class="container container-history">
         <div class="history-info">
           <a href="#" class="history-info-badge">Истории</a>
@@ -1269,7 +1269,7 @@
       <!-- /.history-container -->
     </section>
     <!-- /.history -->
-    <section class="newsletter">
+    <section id="newsletter" class="newsletter">
       <div class="newsletter-wrapper">
         <div class="newsletter-title">
           <h3 class="newsletter-title-header" lang="en">Подпишитесь</h3>
@@ -1313,7 +1313,7 @@
       <!-- /.newsletter-block -->
     </section>
     <!-- /.newsletter -->
-    <section class="footer">
+    <section id="footer" class="footer">
       <div class="container container-footer">
         <div class="footer-wrapper">
           <div class="footer-block footer-block-logo">
@@ -1413,6 +1413,9 @@
         <!-- /.footer-wrapper -->
       </div>
       <!-- /.container -->
+      <div id="top">
+        <img src="img/upbutton.svg" width="30px" height="30px" />
+      </div>
     </section>
     <!-- /.footer -->
     <div class="modal">
@@ -1470,7 +1473,6 @@
       <!-- /.modal__dialog -->
     </div>
     <!-- /.modal -->
-
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>

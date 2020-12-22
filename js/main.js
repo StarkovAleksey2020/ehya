@@ -115,9 +115,22 @@ $(document).ready(function () {
           email: true,
           emailfull: true
         },
+        phone: {
+          required: true,
+          minlength:18
+        }
+
       },
       errorClass: "invalid",
       messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "Minimum field length 2 characters",
+        },
+        phone: {
+          required: "Please specify your phone number",
+          minlength: "Minimum field length 10 characters",
+        },
         email: {
           required: "Please specify your email",
           email: "Email address format is name@domain.com",
@@ -160,5 +173,18 @@ $(document).ready(function () {
 
 // Маска номера телефона
   $(".phoneInput").mask("+7 (999) 999-99-99");
+
+  $(function() {
+    $(window).scroll(function() {
+      if($(this).scrollTop() != 0) {
+      $('#top').fadeIn();
+      } else {
+      $('#top').fadeOut();
+      }
+    });
+    $('#top').click(function() {
+    $('body,html').animate({scrollTop:0},700);
+    });
+  });
 
 });

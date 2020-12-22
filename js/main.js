@@ -66,13 +66,40 @@ $(document).ready(function () {
   });
   var historySliderNarrow = new Swiper('.swiper-container-narrow', {
     // Optional parameters
-    loop: true,
+    loop: false,
     spaceBetween: 30,
     // Navigation arrows
     navigation: {
-      nextEl: '.history-info-buttons__left',
-      prevEl: '.history-info-buttons__right',
+      prevEl: '.history-info-buttons__left',
+      nextEl: '.history-info-buttons__right',
     },
+  });
+
+    if (historySliderNarrow.isBeginning) {
+      historySliderButtonLeft.removeClass("button-on");
+      historySliderButtonLeft.addClass("button-off");
+      historySliderButtonRight.removeClass("button-off");
+      historySliderButtonRight.addClass("button-on");
+    }
+  historySliderNarrow.on('slideChange', function () {
+    if (historySliderNarrow.isBeginning) {
+      historySliderButtonLeft.removeClass("button-on");
+      historySliderButtonLeft.addClass("button-off");
+      historySliderButtonRight.removeClass("button-off");
+      historySliderButtonRight.addClass("button-on");
+    }
+    if (historySliderNarrow.isEnd) {
+      historySliderButtonLeft.removeClass("button-off");
+      historySliderButtonLeft.addClass("button-on");
+      historySliderButtonRight.removeClass("button-on");
+      historySliderButtonRight.addClass("button-off");
+    }
+    if (!historySliderNarrow.isEnd && !historySliderNarrow.isBeginning) {
+      historySliderButtonLeft.removeClass("button-off");
+      historySliderButtonLeft.addClass("button-on");
+      historySliderButtonRight.removeClass("button-off");
+      historySliderButtonRight.addClass("button-on");
+    }
   });
 
   $('#target').keyup(function (e) {
